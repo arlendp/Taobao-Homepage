@@ -209,5 +209,31 @@ $(document).ready(function() {
         $(".various-service .service-content").children().eq($(this).index()).addClass("show-content").siblings().removeClass("show-content");
     });
 
+    $(".taobao-life .phone-bill, .taobao-life .games, .taobao-life .travel, .taobao-life .insurance").hover(function() {
+        $(".taobao-life .phone-bill i").addClass("hover-show");
+        $(".taobao-life .phone-bill").addClass("change-height");
+    });
+
+    $(".taobao-life .games, .taobao-life .travel, .taobao-life .insurance").hover(function() {
+        $(".taobao-life .phone-bill").removeClass("border-show");
+        $("#phone-bill-info").addClass("hidden");
+    });
+
+    $(".taobao-life .phone-bill").hover(function() {
+        $("#phone-bill-info").removeClass("hidden");
+        $(this).addClass("border-show");
+    });
+
+    $("#phone-bill-info").hover(function() {
+        $(".taobao-life .phone-bill").addClass("border-show");
+    });
+    /*
+      taobao-life部分slider的切换
+     */
+    $("#phone-bill-info .tab a").hover(function() {
+        $(this).addClass("link-border").siblings().removeClass("link-border");
+        var offset = $(this).index() * (-288) + "px";
+        $("#phone-bill-info .content-wrapper").css("left", offset);
+    });
 
 });

@@ -1,50 +1,50 @@
 body {
+    font-family: tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
     font-size: 12px;
     overflow-y: scroll;
-    font-family: tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
 }
 
 body p {
-    font-size: 12px;
     font-family: tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
+    font-size: 12px;
 }
 
 body h2 {
+    font-family: tahoma, arial, 'Hiragino Sans GB', 'Microsoft YaHei', 黑体, sans-serif;
     font-size: 16px;
-    font-family: tahoma, arial, 'Hiragino Sans GB', 'Microsoft YaHei', 黑体, sans-serif;    
     font-weight: bold;
 }
 
 body h3 {
+    font-family: tahoma, arial, 'Hiragino Sans GB', 'Microsoft YaHei', 黑体, sans-serif;
     font-size: 14px;
-    font-family: tahoma, arial, 'Hiragino Sans GB', 'Microsoft YaHei', 黑体, sans-serif;    
     font-weight: bold;
 }
 
 body a {
-    color: #6C6C6C;
     cursor: pointer;
     text-decoration: none;
+    color: #6c6c6c;
 }
 
 body a:hover {
-    color: #F22E00;
+    color: #f22e00;
 }
 
 header {
-    background-color: #F5F5F5;
-    border-bottom: 1px solid #EEEEEE;
     position: fixed;
+    z-index: 9999;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    border-bottom: 1px solid #eee;
+    background-color: #f5f5f5;
 }
 
 .header {
-    height: 35px;
-    width: 1190px;
-    margin: 0 auto;
     line-height: 35px;
+    width: 1190px;
+    height: 35px;
+    margin: 0 auto;
 }
 
 .header-login,
@@ -53,9 +53,9 @@ header {
 }
 
 .header a {
+    position: relative;
     float: left;
     margin-top: 1px;
-    position: relative;
 }
 
 .header li {
@@ -68,9 +68,9 @@ header {
 }
 
 .header-login .login {
-    color: #F22E00;
     margin-right: 7px;
     margin-left: 6px;
+    color: #f22e00;
 }
 
 .image-arrow {
@@ -103,16 +103,16 @@ header {
 }
 
 .header-menu > li {
+    position: relative;
     float: left;
     padding: 0 6px;
-    position: relative;
 }
 
 .header-menu > li:hover {
     padding: 0 5px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    background-color: #FFFFFF;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    background-color: #fff;
 }
 
 .header-menu a {
@@ -126,12 +126,12 @@ header {
 .header-menu .divider:hover {
     padding: 0 5px 0 4px;
     border: none;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 
 .divider span {
-    color: #DEDEE3;
     margin-top: 1px;
+    color: #dedee3;
 }
 
 .header-menu .image-menu {
@@ -148,9 +148,9 @@ header {
     padding: 8px 0;
     border-width: 0 1px 1px;
     border-style: solid;
-    border-color: #EEEEEE;
-    border-top: 1px solid #FFFFFF;
-    background-color: #FFFFFF;
+    border-color: #eee;
+    border-top: 1px solid #fff;
+    background-color: #fff;
 }
 
 .single-pull-down-list li {
@@ -158,7 +158,7 @@ header {
 }
 
 .single-pull-down-list li:hover {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 
 .single-pull-down-list a {
@@ -171,7 +171,7 @@ header {
 }
 
 .single-pull-down-list a:hover {
-    color: #6C6C6C;
+    color: #6c6c6c;
 }
 
 .single-pull-down-list {
@@ -183,24 +183,24 @@ header {
 }
 
 .website-navigation-wrapper {
-    width: 1188px;
-    height: 277px;
     position: absolute;
     top: 35px;
     right: 0;
+    width: 1188px;
+    height: 277px;
     border-width: 0 1px 1px;
     border-style: solid;
-    border-color: #EEEEEE;
-    background-color: #FFFFFF;
+    border-color: #eee;
+    background-color: #fff;
 }
 
 .website-navigation-content a {
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
 .website-navigation-content {
-    padding: 19px 9px 0 8px;
     height: 240px;
+    padding: 19px 9px 0 8px;
 }
 
 .website-navigation-content li {
@@ -215,9 +215,9 @@ header {
 
 .website-navigation-content i {
     display: inline-block;
-    margin: 5px 0 13px 10px;
     width: 65px;
     height: 17px;
+    margin: 5px 0 13px 10px;
     background-image: url(../images/taobao_sprites_2.png);
     background-position: -100px 0;
 }
@@ -226,8 +226,8 @@ header {
 .shopping-feature,
 .current-hot-spot,
 .more-fun {
-    width: 292px;
     float: left;
+    width: 292px;
 }
 
 .website-navigation-content ul,
@@ -240,18 +240,18 @@ header {
 }
 
 .website-navigation-content a {
+    line-height: 12px;
     margin: 0;
     padding: 6px 7px 5px 7px;
-    border: 1px solid #FFFFFF;
-    line-height: 12px;
     cursor: pointer;
+    border: 1px solid #fff;
 }
 
 .website-navigation-content a:hover {
-    color: #FFFFFF;
-    background-color: #FF5500;
-    border-color: #FF5500;
+    color: #fff;
+    border-color: #f50;
     border-radius: 2px;
+    background-color: #f50;
 }
 
 .special-padding a:hover {
@@ -261,7 +261,7 @@ header {
 .shopping-feature,
 .current-hot-spot,
 .more-fun {
-    border-left: 1px solid #EEEEEE;
+    border-left: 1px solid #eee;
 }
 
 .shopping-feature i {
@@ -274,8 +274,8 @@ header {
 }
 
 .shopping-feature a:hover {
-    background-color: #A0B959;
-    border-color: #A0B959;
+    border-color: #a0b959;
+    background-color: #a0b959;
 }
 
 .shopping-feature .special-margin,
@@ -294,8 +294,8 @@ header {
 }
 
 .current-hot-spot a:hover {
-    background-color: #DF61AB;
-    border-color: #DF61AB;
+    border-color: #df61ab;
+    background-color: #df61ab;
 }
 
 .more-fun li {
@@ -308,13 +308,13 @@ header {
 }
 
 .more-fun a:hover {
-    background-color: #52A0E5;
-    border-color: #52A0E5;
+    border-color: #52a0e5;
+    background-color: #52a0e5;
 }
 
 .website-navigation-wrapper {
-    visibility: hidden;
     z-index: 9999;
+    visibility: hidden;
 }
 
 .hover-show {
@@ -323,13 +323,13 @@ header {
 
 .website-navigation-content .hot-icon,
 .website-navigation-content .new-icon {
-    width: 9px;
-    height: 14px;
     position: absolute;
-    margin: 0;
-    padding: 0;
     top: -6px;
     right: -1px;
+    width: 9px;
+    height: 14px;
+    margin: 0;
+    padding: 0;
     background: url(../images/hot.gif) center;
 }
 
@@ -339,22 +339,22 @@ header {
 
 .content {
     width: 1190px;
-    margin: 36px auto 0;
     height: 500px;
+    margin: 36px auto 0;
 }
 
 .search {
+    font-size: 0;
     position: relative;
     height: 114px;
     padding-top: 12px;
-    font-size: 0;
 }
 
 .taobao-icon {
     display: inline-block;
-    margin: 28px 109px 0 0;
     width: 142px;
     height: 58px;
+    margin: 28px 109px 0 0;
     background: url(../images/taobao_sprites_1.png);
 }
 
@@ -364,14 +364,14 @@ header {
 }
 
 .search-goods {
-    vertical-align: top;
     margin-top: 20px;
+    vertical-align: top;
 }
 
 .tab-search {
+    font-size: 12px;
     width: 721px;
     height: 65px;
-    font-size: 12px;
 }
 
 .tab-search ul,
@@ -380,35 +380,35 @@ header {
 }
 
 .tab-search ul a {
+    line-height: 25px;
     width: 50px;
     height: 25px;
-    line-height: 25px;
-    text-align: center;
-    color: #3C3C3C;
     cursor: pointer;
+    text-align: center;
+    color: #3c3c3c;
 }
 
 .tab-search .tmall-color {
-    background-color: #C60000;
+    background-color: #c60000;
 }
 
 .tab-search .treasure-color {
-    background-color: #FF4200;
+    background-color: #ff4200;
 }
 
 .tab-search .tab-hover:hover {
-    color: #C60000;
-    background-color: #F9E6E6;
+    color: #c60000;
+    background-color: #f9e6e6;
 }
 
 .tab-search .selected {
-    color: #FFFFFF;
     font-weight: bold;
+    color: #fff;
 }
 
 .search-input {
-    clear: both;
     position: relative;
+    clear: both;
 }
 
 .input {
@@ -418,14 +418,14 @@ header {
     height: 34px;
     border-width: 3px 0 3px 3px;
     border-style: solid;
-    border-color: #FF5500;
+    border-color: #f50;
 }
 
 .input input {
     font-size: 12px;
-    border: none;
     width: 608px;
     padding: 10px 0 10px 10px;
+    border: none;
 }
 
 .input input:focus {
@@ -438,9 +438,9 @@ header {
     right: 8px;
     width: 20px;
     height: 20px;
+    cursor: pointer;
     background: url(../images/upload_file.png);
     background-size: 20px 45px;
-    cursor: pointer;
 }
 
 .input a:hover {
@@ -449,32 +449,32 @@ header {
 }
 
 .button-search {
-    font-family: "Microsoft YaHei";
-    font-weight: bold;
+    font-family: 'Microsoft YaHei';
     font-size: 20px;
-    color: #FFFFFF;
+    font-weight: bold;
     float: right;
     width: 100px;
     height: 40px;
     padding: 0;
-    border: none;
-    letter-spacing: 0.25em;
-    text-indent: 0.25em;
-    background-color: #FF4200;
-    text-align: center;
     cursor: pointer;
+    text-align: center;
+    text-indent: .25em;
+    letter-spacing: .25em;
+    color: #fff;
+    border: none;
+    background-color: #ff4200;
 }
 
 .button-search:hover {
-    background-color: #F52B00;
+    background-color: #f52b00;
 }
 
 .search-input .anvanced-search {
-    position: absolute;
-    width: 24px;
     line-height: 18px;
+    position: absolute;
     top: -1px;
     right: -39px;
+    width: 24px;
     cursor: pointer;
 }
 
@@ -499,35 +499,35 @@ header {
 }
 
 .link-hover-color-orange {
-    color: #FF4400;
+    color: #f40;
 }
 
 .link-hover-color-red {
-    color: #C60000;
+    color: #c60000;
 }
 
 .goods-introduction .link-more {
     float: right;
-    margin-right: 0;
-    border: 1px solid #EEEEEE;
-    padding: 4px 4px 2px 5px;
     margin-top: -5px;
+    margin-right: 0;
     margin-left: -1px;
+    padding: 4px 4px 2px 5px;
+    border: 1px solid #eee;
 }
 
 .goods-introduction .link-more:hover {
-    background-color: #FF4400;
-    color: #FFFFFF;
-    border-color: #FF4400;
+    color: #fff;
+    border-color: #f40;
+    background-color: #f40;
 }
 
 .link-more i {
     display: inline-block;
     width: 3px;
-    vertical-align: top;
     height: 6px;
     margin-top: 2px;
     margin-left: 3px;
+    vertical-align: top;
     background-image: url(../images/arrow_right_black.png);
 }
 
@@ -546,14 +546,14 @@ header {
     display: inline-block;
     width: 94px;
     height: 112px;
-    text-align: center;
     cursor: pointer;
-    border: 1px solid #EEEEEE;
+    text-align: center;
+    border: 1px solid #eee;
 }
 
 .two-dimension-code p {
     margin: 9px 0 3px;
-    color: #FF4400;
+    color: #f40;
 }
 
 .two-dimension-code img {
@@ -564,11 +564,11 @@ header {
 .delete {
     display: inline-block;
     padding: 5px 4px 3px;
-    border-width: 1px 0px 1px 1px;
-    border-style: solid;
-    border-color: #EEEEEE;
     cursor: pointer;
     vertical-align: top;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #eee;
 }
 
 .delete i {
@@ -579,12 +579,12 @@ header {
 }
 
 .main-content {
-    margin-top: 7px;
     float: left;
+    margin-top: 7px;
 }
 
 .main-content a {
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
 .main-content .taobao-special-service {
@@ -592,30 +592,30 @@ header {
 }
 
 .taobao-special-service h2 {
+    font-family: 'Microsoft YaHei';
     font-size: 16px;
-    font-family: "Microsoft YaHei";
     font-weight: bold;
-    color: #FFFFFF;
+    line-height: 35px;
     width: 190px;
     height: 35px;
-    line-height: 35px;
     text-indent: 14px;
+    color: #fff;
+    background-color: #f40;
     background-image: url(../images/taobao_special_service.png);
-    background-color: #FF4400;
 }
 
 .taobao-special-service-items {
     padding-top: 12px;
-    border-width: 0px 1px 1px;
+    border-width: 0 1px 1px;
     border-style: solid;
-    border-color: #FF4400;
+    border-color: #f40;
 }
 
 .taobao-special-service-items h3 {
     font-size: 14px;
     font-weight: bold;
-    color: #3C3C3C;
     margin: 0 0 0 14px;
+    color: #3c3c3c;
 }
 
 .taobao-special-service-items h3 i {
@@ -623,8 +623,8 @@ header {
     width: 20px;
     height: 20px;
     margin-top: -3px;
-    vertical-align: middle;
     margin-right: 7px;
+    vertical-align: middle;
     background: url(../images/taobao_sprites_1.png) -110px -98px;
 }
 
@@ -633,9 +633,9 @@ header {
 }
 
 .taobao-special-service-items a {
+    line-height: 25px;
     display: inline-block;
     width: 35px;
-    line-height: 25px;
 }
 
 .taobao-theme-market li i {
@@ -647,8 +647,8 @@ header {
 }
 
 .taobao-special-shopping h3 i {
-    background-position: -208px -83px;
     margin-top: 0;
+    background-position: -208px -83px;
 }
 
 .taobao-special-shopping li a:nth-child(n+3) {
@@ -656,8 +656,8 @@ header {
 }
 
 .taobao-special-shopping a {
-    width: 56px;
     line-height: 24px;
+    width: 56px;
 }
 
 .taobao-special-shopping ul {
@@ -665,13 +665,13 @@ header {
 }
 
 .taobao-sale-promotion h3 i {
-    background-position: -91px -98px;
     width: 19px;
+    background-position: -91px -98px;
 }
 
 .taobao-sale-promotion a {
-    width: 63px;
     line-height: 24px;
+    width: 63px;
 }
 
 .taobao-sale-promotion li a:nth-child(3n+2) {
@@ -687,9 +687,9 @@ header {
 }
 
 .taobao-sale-promotion li:nth-child(n+4) {
-    border-top: 1px solid #E6E7EB;
-    padding-top: 6px;
     margin-top: 7px;
+    padding-top: 6px;
+    border-top: 1px solid #e6e7eb;
 }
 
 .taobao-sale-promotion ul {
@@ -723,35 +723,35 @@ header {
 
 .taobao-nav {
     margin-left: 10px;
-    border-bottom: 2px solid #FF4400;
+    border-bottom: 2px solid #f40;
 }
 
 .taobao-primary-nav a {
-    color: #FF4400;
     display: inline-block;
     padding: 6px 4px 6px 5px;
     cursor: pointer;
+    color: #f40;
 }
 
 .taobao-primary-nav li {
     margin-right: 11px;
-    color: #FF4400;
+    color: #f40;
 }
 
 .taobao-primary-nav li:last-child {
-    margin-left: -6px;
     font-weight: normal;
     margin-right: 6px;
+    margin-left: -6px;
 }
 
 .taobao-primary-nav a:hover {
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
 }
 
 .taobao-nav .taobao-secondary-nav {
     font-size: 14px;
-    vertical-align: top;
     margin-top: 3px;
+    vertical-align: top;
 }
 
 .taobao-nav .taobao-primary-nav,
@@ -764,8 +764,8 @@ header {
 }
 
 .taobao-secondary-nav a {
-    padding: 7px 4px 7px 5px;
     display: inline-block;
+    padding: 7px 4px 7px 5px;
 }
 
 .taobao-photo-slider {
@@ -775,9 +775,9 @@ header {
 
 .photo-slider-primary {
     position: relative;
+    overflow: hidden;
     width: 520px;
     height: 280px;
-    overflow: hidden;
 }
 
 
@@ -817,8 +817,8 @@ header {
 
 .slide-left,
 .slide-right {
-    background-color: #B3B3B3;
     cursor: pointer;
+    background-color: #b3b3b3;
 }
 
 .photo-slider-primary .slide-left {
@@ -832,35 +832,35 @@ header {
 }
 
 .slide-switch {
-    position: absolute;
     font-size: 0;
-    border-radius: 5px;
-    opacity: 0.3;
-    background-color: #FFFFFF;
+    position: absolute;
     bottom: 15px;
     left: 227px;
+    opacity: .3;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 .slide-switch li {
     display: inline-block;
     width: 9px;
     height: 9px;
-    background-color: #B7B7B7;
-    border-radius: 4px;
     margin: 2px;
     cursor: pointer;
+    border-radius: 4px;
+    background-color: #b7b7b7;
 }
 
 .slide-switch #slide-selected {
-    background-color: #FF4400;
+    background-color: #f40;
 }
 
 .photo-slider-secondary {
     position: relative;
+    overflow: hidden;
     width: 520px;
     height: 200px;
     margin-top: 3px;
-    overflow: hidden;
 }
 
 .photo-slider-secondary .slide-left {
@@ -891,28 +891,28 @@ header {
 }
 
 .taobao-information .taobao-side {
-    margin: 7px 0 0 10px;
     float: left;
+    margin: 7px 0 0 10px;
 }
 
 .taobao-side .taobao-announcement {
     position: relative;
     width: 288px;
     height: 98px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #eee;
 }
 
 .taobao-announcement-tab li {
+    line-height: 26px;
     float: left;
     width: 56px;
     height: 26px;
-    border: 1px solid #FFFFFF;
-    border-top: none;
     padding-top: 1px;
-    border-bottom: 1px solid #EEEEEE;
     text-align: center;
-    line-height: 26px;
-    background-color: #F7F7F7;
+    border: 1px solid #fff;
+    border-top: none;
+    border-bottom: 1px solid #eee;
+    background-color: #f7f7f7;
 }
 
 .taobao-announcement-tab li:first-child {
@@ -925,16 +925,16 @@ header {
 
 .taobao-announcement-tab .hover {
     font-weight: bold;
-    border-color: #EEEEEE;
-    border-bottom: 1px solid #FFFFFF;
-    background-color: #FFFFFF;
+    border-color: #eee;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
 }
 
 .taobao-announcement .announcement-wrapper {
     position: absolute;
+    top: 28px;
     width: 288px;
     height: 71px;
-    top: 28px;
 }
 
 .announcement-wrapper .tab-announcement,
@@ -951,7 +951,7 @@ header {
 }
 
 .tab-announcement li:first-child a {
-    color: #FF4400;
+    color: #f40;
 }
 
 .tab-announcement li:last-child a:first-child {
@@ -970,7 +970,7 @@ header {
 }
 
 .tab-rules li:first-child a:first-child {
-    color: #FF4400;
+    color: #f40;
 }
 
 .tab-forum li:first-child a:first-child {
@@ -982,7 +982,7 @@ header {
 }
 
 .tab-forum li:last-child a:last-child {
-    color: #FF4400;
+    color: #f40;
 }
 
 .tab-safety li a:first-child {
@@ -990,7 +990,7 @@ header {
 }
 
 .tab-safety li:last-child a:first-child {
-    color: #FF4400;
+    color: #f40;
 }
 
 .public-benefit {
@@ -1015,7 +1015,7 @@ header {
 .taobao-self-wrapper {
     width: 288px;
     height: 120px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #eee;
     border-top: none;
 }
 
@@ -1025,8 +1025,8 @@ header {
 
 .taobao-self ul {
     display: inline-block;
-    vertical-align: top;
     margin: 13px 0 0 5px;
+    vertical-align: top;
 }
 
 .taobao-self li:first-child {
@@ -1044,7 +1044,7 @@ header {
 }
 
 .taobao-self li:last-child a {
-    color: #FF4400;
+    color: #f40;
 }
 
 .taobao-self li:last-child span {
@@ -1056,24 +1056,24 @@ header {
 }
 
 .taobao-self div a {
-    display: inline-block;
     font-weight: bold;
-    color: #FFFFFF;
-    background-color: #FF4400;
+    display: inline-block;
+    color: #fff;
+    background-color: #f40;
 }
 
 .taobao-self div i {
     display: inline-block;
     width: 12px;
     height: 14px;
-    background-image: url(../images/login.png);
     margin-top: 1px;
+    background-image: url(../images/login.png);
 }
 
 .taobao-self div a:first-child i {
+    margin-top: -6px;
     margin-right: 6px;
     vertical-align: middle;
-    margin-top: -6px;
 }
 
 .taobao-self div a {
@@ -1081,8 +1081,8 @@ header {
 }
 
 .taobao-self div a:first-child {
-    padding: 7px 25px 6px 25px;
     margin-right: 1px;
+    padding: 7px 25px 6px 25px;
 }
 
 .taobao-self div a:last-child {
@@ -1090,20 +1090,20 @@ header {
 }
 
 .taobao-heading {
+    line-height: 44px;
     position: relative;
     width: 288px;
     height: 44px;
-    line-height: 44px;
     border-width: 0 1px 1px 1px;
     border-style: solid;
-    border-color: #EEEEEE;
+    border-color: #eee;
 }
 
 .taobao-heading img {
-    height: 24px;
     position: absolute;
     top: 0;
     bottom: 0;
+    height: 24px;
     margin: auto 0 auto 14px;
 }
 
@@ -1111,17 +1111,544 @@ header {
     margin-left: 84px;
 }
 
-.all-goods-information {
+.taobao-life {
+    position: relative;
+    display: inline-block;
+    width: 290px;
+}
+
+.taobao-life > div {
+    position: relative;
     float: left;
-    margin-top: 12px;
-    width: 100%;
+    overflow: hidden;
+    width: 57px;
+    height: 72px;
+    margin-top: -1px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #eaeaea;
+}
+
+.taobao-life > div:hover > i {
+    animation: moveup .2s ease-in-out;
+}
+
+@keyframes moveup {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -40px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.taobao-life .phone-bill:hover,
+.taobao-life .games:hover,
+.taobao-life .travel:hover,
+.taobao-life .insurance:hover,
+.taobao-life .border-show {
+    z-index: 1;
+    border-color: #f40;
+    border-bottom-color: #fff;
+}
+
+.taobao-life .phone-bill .hover-show {
+    width: 15px;
+    height: 21px;
+    margin: 26px 0 7px;
+    background-size: 15px 21px;
+}
+
+.taobao-life .phone-bill {
+    width: 114px;
+    height: 145px;
+}
+
+.taobao-life .hidden {
+    display: none;
+}
+
+.taobao-life .change-height {
+    height: 73px;
+}
+
+.taobao-life > div:not(.phone-bill):not(.money) {
+    margin-left: -1px;
+}
+
+.taobao-life .service {
+    width: 56px;
+}
+
+.taobao-life > div > i {
+    position: relative;
+    display: inline-block;
+    margin: 21px 0 8px;
+}
+
+.taobao-life > div p {
+    color: #6c6c6c;
+}
+
+.taobao-life > div:hover p {
+    color: #f40;
+}
+
+.taobao-life .phone-bill i {
+    width: 35px;
+    height: 51px;
+    margin: 38px 0 15px;
+    background: url(../images/phone_bill.png);
+}
+
+.taobao-life .games i {
+    width: 22px;
+    height: 20px;
+    margin-top: 22px;
+    background: url(../images/games.png);
+}
+
+.taobao-life .travel i {
+    width: 22px;
+    height: 19px;
+    margin-top: 23px;
+    background: url(../images/travel.png);
+}
+
+.taobao-life .insurance i {
+    width: 24px;
+    height: 22px;
+    margin-bottom: 7px;
+    background: url(../images/insurance.png);
+}
+
+.taobao-life .lottery i {
+    width: 26px;
+    height: 18px;
+    margin: 23px 0 9px;
+    background: url(../images/lottery.png);
+}
+
+.taobao-life .movies i {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 7px;
+    background: url(../images/movies.png);
+}
+
+.taobao-life .take-out i {
+    width: 19px;
+    height: 23px;
+    margin-bottom: 6px;
+    background: url(../images/take_out.png);
+}
+
+.taobao-life .money i {
+    width: 22px;
+    height: 19px;
+    margin-top: 23px;
+    background: url(../images/money.png);
+}
+
+.taobao-life .service i {
+    width: 22px;
+    height: 19px;
+    margin-top: 23px;
+    background: url(../images/service.png);
+}
+
+.taobao-life .music i {
+    width: 19px;
+    height: 18px;
+    margin: 23px 0 9px;
+    background: url(../images/music.png);
+}
+
+.taobao-life .bills i {
+    width: 20px;
+    height: 22px;
+    margin-bottom: 7px;
+    background: url(../images/bills.png);
+}
+
+.taobao-life .train-ticket i {
+    width: 19px;
+    height: 22px;
+    margin-bottom: 7px;
+    background: url(../images/train_ticket.png);
+}
+
+.taobao-life #phone-bill-info {
+    position: absolute;
+    top: 73px;
+    float: none;
+    width: 288px;
+    height: 150px;
+    margin: 0;
+    cursor: default;
+    text-align: left;
+    border: 1px solid #f40;
+    background-color: #fff;
+}
+
+.taobao-life #phone-bill-info .tab {
+    font-size: 0;
+    margin: 6px 0 0 14px;
+}
+
+.taobao-life #phone-bill-info .tab a {
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 2px;
+    padding: 5px 11px;
+    border-radius: 2px;
+}
+
+.taobao-life #phone-bill-info .tab .link-border {
+    padding: 3px 9px;
+    border: 2px solid #a6c8ff;
+}
+
+.taobao-life .slider {
+    position: relative;
+    height: 122px;
+}
+
+.taobao-life #phone-bill-info .content-wrapper > div {
+    padding-left: 15px;
+}
+
+.taobao-life #phone-bill-info input[type='text'] {
+    width: 188px;
+    padding: 6px 0 3px;
+    text-indent: 4px;
+    letter-spacing: -1px;
+    border: 1px solid #ccc;
+}
+
+.taobao-life input:focus,
+.taobao-life input:hover {
+    outline: none;
+}
+
+.taobao-life #phone-bill-info input:hover {
+    border-color: #9c9c9c;
+}
+
+.taobao-life #phone-bill-info .telephone-expenses .amount {
+    position: relative;
+    margin-top: -1px;
+}
+
+.taobao-life #phone-bill-info .telephone-expenses .amount input {
+    text-indent: 5px;
+}
+
+.taobao-life #phone-bill-info .telephone-expenses .amount input::-webkit-input-placeholder {
+    font-family: tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
+    font-size: 12px;
+    letter-spacing: normal;
+    color: #000;
+}
+
+.taobao-life #phone-bill-info .phone-number {
     position: relative;
 }
 
-.all-goods-information .hot-point {
-    height: 69px;
-    border: 1px solid #E8E8E8;
+.taobao-life #phone-bill-info .phone-number i,
+.taobao-life #phone-bill-info .telephone-expenses .amount i {
+    position: absolute;
+    top: 1px;
+    left: 169px;
+    width: 20px;
+    height: 26px;
+    cursor: pointer;
+    background: url(../images/taobao_life.png) -24px 5px;
+}
+
+.taobao-life #phone-bill-info .telephone-expenses .amount:hover i {
+    background-position: -4px -21px;
+}
+
+.taobao-life #phone-bill-info .telephone-expenses .amount i {
+    background-position: -24px -21px;
+}
+
+.taobao-life #phone-bill-info .phone-number:hover .contacts-icon {
+    background-position: -4px 5px;
+}
+
+.taobao-life #phone-bill-info .content-wrapper {
+    position: absolute;
+    left: 0;
+    width: 1152px;
+    padding-top: 6px;
+    transition: left .5s;
+}
+
+.taobao-life #phone-bill-info .content-wrapper > div {
     float: left;
+    width: 273px;
+}
+
+.taobao-life #phone-bill-info .selling-price-wrapper {
+    font-size: 0;
+    margin: 8px 0 0 4px;
+}
+
+.taobao-life #phone-bill-info .selling-price-wrapper span {
+    font-size: 12px;
+}
+
+.taobao-life #phone-bill-info .selling-price {
+    color: #666;
+}
+
+.taobao-life #phone-bill-info .price {
+    margin-left: 5px;
+}
+
+.taobao-life .price span:first-child {
+    font-family: arial;
+    color: #999;
+}
+
+.taobao-life .price span:last-child {
+    font-family: verdana, arial;
+    font-weight: bold;
+    color: #f60;
+}
+
+.taobao-life .recharge {
+    margin-top: 8px;
+}
+
+.taobao-life .recharge-button {
+    font-weight: bold;
+    display: inline-block;
+    padding: 7px 10px 8px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #f40;
+}
+
+.taobao-life .recharge .discount {
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: 1px;
+    color: #999;
+}
+
+.taobao-life .flow {
+    font-size: 0;
+    position: relative;
+    margin-top: -1px;
+}
+
+.taobao-life .question-icon,
+.taobao-life #phone-bill-info .phone-number .question-icon {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    cursor: help;
+    background: url(../images/right_question.png) 0 -16px;
+}
+
+.taobao-life #phone-bill-info .broadband .phone-number .question-icon {
+    position: absolute;
+    top: 5px;
+    left: 199px;
+}
+
+.taobao-life .question-icon .question-answer {
+    position: absolute;
+    white-space: nowrap;
+    color: #575757;
+}
+
+.taobao-life .flow > div {
+    position: relative;
+    display: inline-block;
+}
+
+.taobao-life #phone-bill-info .flow-expenses .selling-price-wrapper {
+    margin-top: 11px;
+}
+
+.taobao-life #phone-bill-info .flow-expenses .price {
+    margin-left: 12px;
+}
+
+.taobao-life #phone-bill-info .flow-expenses .price span:last-child {
+    margin-left: 2px;
+}
+
+.taobao-life #phone-bill-info .flow-expenses .recharge {
+    margin-top: 6px;
+}
+
+.taobao-life #phone-bill-info .flow-expenses input {
+    padding: 7px 0 2px;
+}
+
+.taobao-life #phone-bill-info .flow-primary input {
+    width: 94px;
+}
+
+.taobao-life #phone-bill-info .flow .big-arrow-down {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+    height: 26px;
+    background: url(../images/taobao_life.png) -24px -21px;
+}
+
+.taobao-life #phone-bill-info .flow-primary input::-webkit-input-placeholder {
+    color: #000;
+}
+
+.taobao-life #phone-bill-info .flow-secondary {
+    margin-left: -1px;
+}
+
+.taobao-life #phone-bill-info .flow-secondary input {
+    width: 93px;
+}
+
+.taobao-life input[type='radio'] {
+    margin: 0;
+}
+
+.taobao-life .fixed-line-telephone {
+    margin-top: 4px;
+}
+
+.taobao-life .telecom-operators {
+    font-family: 'Microsoft Yahei';
+    color: #333;
+}
+
+.taobao-life .telecom-operators .telecom {
+    margin: 0 3px 0 2px;
+}
+
+.taobao-life .telecom-operators .unicom {
+    margin: 0 3px 0 25px;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone input[type='text'],
+.taobao-life #phone-bill-info .broadband input {
+    width: 198px;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .phone-number {
+    margin-top: 7px;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .phone-number i,
+.taobao-life #phone-bill-info .broadband .phone-number i {
+    left: 179px;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .amount,
+.taobao-life #phone-bill-info .broadband .phone-number,
+.taobao-life #phone-bill-info .broadband .amount {
+    position: relative;
+    margin-top: -1px;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .phone-number input::-webkit-input-placeholder,
+.taobao-life #phone-bill-info .broadband input::-webkit-input-placeholder {
+    font-family: 'Microsoft YaHei';
+    font-size: 10px;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone input[type='text'],
+.taobao-life #phone-bill-info .broadband input {
+    padding: 4px 0 6px;
+    text-indent: 10px;
+    letter-spacing: 0;
+}
+
+.taobao-life #phone-bill-info .broadband .city {
+    position: relative;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .amount input {
+    cursor: pointer;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .amount input::-webkit-input-placeholder,
+.taobao-life #phone-bill-info .broadband .amount input::-webkit-input-placeholder {
+    font-family: 'Microsoft Yahei';
+    font-size: 10px;
+    color: #333;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .recharge,
+.taobao-life #phone-bill-info .broadband .recharge {
+    font-family: 'Microsoft YaHei';
+    margin-top: 5px;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .recharge .recharge-button,
+.taobao-life #phone-bill-info .fixed-line-telephone .recharge .selling-price-wrapper,
+.taobao-life #phone-bill-info .broadband .recharge .recharge-button,
+.taobao-life #phone-bill-info .broadband .recharge .selling-price-wrapper {
+    float: left;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .selling-price-wrapper,
+.taobao-life #phone-bill-info .broadband .recharge .selling-price-wrapper {
+    display: inline-block;
+    margin: 7px 0 0 68px;
+}
+
+.taobao-life #phone-bill-info .broadband .recharge .selling-price-wrapper {
+    margin-left: 41px;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .price,
+.taobao-life #phone-bill-info .broadband .price {
+    margin: 0 0 0 4px;
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .price span,
+.taobao-life #phone-bill-info .broadband .price span {
+    font-family: 'Microsoft YaHei';
+}
+
+.taobao-life #phone-bill-info .fixed-line-telephone .price span:first-child,
+.taobao-life #phone-bill-info .broadband .price span:first-child {
+    color: #666;
+}
+
+.taobao-life .small-arrow-down {
+    position: absolute;
+    top: 11px;
+    left: 181px;
+    width: 8px;
+    height: 5px;
+    background: url(../images/taobao_life_arrow.png) 0 -15px;
+}
+
+.all-goods-information {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.all-goods-information .hot-point {
+    float: left;
+    height: 69px;
+    border: 1px solid #e8e8e8;
 }
 
 .all-goods-information .current-hot-wrapper {
@@ -1132,11 +1659,11 @@ header {
 
 .all-goods-information .current-hot,
 .all-goods-information .hot-recommend {
-    height: 42px;
-    margin-left: 17px;
-    margin-top: 15px;
     font-size: 0;
-    border-right: 1px solid #E8E8E8;
+    height: 42px;
+    margin-top: 15px;
+    margin-left: 17px;
+    border-right: 1px solid #e8e8e8;
 }
 
 .hot-point h3,
@@ -1146,41 +1673,41 @@ header {
 }
 
 .hot-point h3 {
-    font-family: "Microsoft YaHei";
-    width: 28px;
-    line-height: 18px;
+    font-family: 'Microsoft YaHei';
     font-weight: bold;
+    line-height: 18px;
+    width: 28px;
     margin-top: -2px;
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
 .hot-point ul {
     font-size: 12px;
-    margin-left: 18px;
     line-height: 20px;
+    margin-left: 18px;
 }
 
 .current-hot:before,
 .hot-recommend:before {
-    content: "";
+    display: inline-block;
     width: 0;
     height: 100%;
-    display: inline-block;
+    content: '';
     vertical-align: middle;
 }
 
 .hot-point ul a {
-    margin-right: 9px;
-    color: #3C3C3C;
     position: relative;
+    margin-right: 9px;
+    color: #3c3c3c;
 }
 
 .hot-point .hot-icon,
 .hot-point .new-icon {
     position: absolute;
+    top: -6px;
     width: 9px;
     height: 14px;
-    top: -6px;
 }
 
 .hot-point .hot-icon {
@@ -1207,11 +1734,11 @@ header {
 }
 
 .made-in-china-wrapper {
+    position: relative;
     float: left;
     width: 310px;
-    border-right: 1px solid #E8E8E8;
     height: 100%;
-    position: relative;
+    border-right: 1px solid #e8e8e8;
 }
 
 .made-in-china-wrapper li > i {
@@ -1222,9 +1749,9 @@ header {
 }
 
 .made-in-china-wrapper ul {
+    line-height: 12px;
     margin-top: 19px;
     margin-left: 20px;
-    line-height: 12px;
 }
 
 .made-in-china-wrapper a {
@@ -1232,8 +1759,8 @@ header {
 }
 
 .made-in-china-wrapper li:first-child a {
-    vertical-align: top;
     margin: 1px 0 0 13px;
+    vertical-align: top;
 }
 
 .made-in-china-wrapper li:first-child {
@@ -1253,7 +1780,7 @@ header {
     bottom: 0;
     margin: auto 0;
     margin-left: 14px;
-    transition: margin-left 0.2s ease-out;
+    transition: margin-left .2s ease-out;
 }
 
 .made-in-china-wrapper img:hover {
@@ -1261,37 +1788,37 @@ header {
 }
 
 .auction-crowdfunding-wrapper {
+    position: relative;
+    float: left;
     width: 288px;
     height: 100%;
-    float: left;
-    position: relative;
 }
 
 .auction-crowdfunding-overflow {
     position: relative;
-    height: 100%;
-    width: 260px;
     overflow: hidden;
+    width: 260px;
+    height: 100%;
 }
 
 .auction-crowdfunding-wrapper .auction-crowdfunding {
     position: absolute;
-    width: 100%;
     top: 0;
-    transition: top 0.5s;
+    width: 100%;
+    transition: top .5s;
 }
 
 .auction,
 .crowdfunding {
-    height: 69px;
     position: relative;
+    height: 69px;
 }
 
 .auction .auction-img {
     display: inline-block;
-    background: url(../images/taobao_sprites_1.png) -146px 0;
     width: 83px;
     height: 15px;
+    background: url(../images/taobao_sprites_1.png) -146px 0;
 }
 
 .crowdfunding .crowdfunding-img {
@@ -1313,7 +1840,7 @@ header {
     bottom: 0;
     margin: auto 0;
     margin-left: 10px;
-    transition: margin-left 0.2s ease-out;
+    transition: margin-left .2s ease-out;
 }
 
 .auction img:hover,
@@ -1323,14 +1850,14 @@ header {
 
 .crowdfunding ul,
 .auction ul {
-    margin: 15px 0 0 14px;
     line-height: 12px;
+    margin: 15px 0 0 14px;
 }
 
 .auction li:first-child a,
 .crowdfunding li:first-child a {
-    vertical-align: top;
     margin: 1px 0 0 2px;
+    vertical-align: top;
 }
 
 .crowdfunding li:first-child a {
@@ -1364,19 +1891,19 @@ header {
 
 .auction-crowdfunding-switcher {
     position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: 0;
     width: 12px;
     height: 24px;
-    border: 1px solid #FF4400;
-    top: 0;
-    bottom: 0;
     margin: auto 0;
-    right: -1px;
+    border: 1px solid #f40;
 }
 
 .auction-crowdfunding-switcher a {
+    float: left;
     width: 100%;
     height: 50%;
-    float: left;
 }
 
 .auction-crowdfunding-switcher a:first-child i,
@@ -1395,12 +1922,12 @@ header {
 }
 
 .auction-crowdfunding-switcher a i {
-    vertical-align: top;
     margin: 6px 0 0 2px;
+    vertical-align: top;
 }
 
 .auction-crowdfunding-switcher .switch-color {
-    background-color: #FF4400;
+    background-color: #f40;
 }
 
 .auction-crowdfunding-switcher a:first-child .switch-up-image {
@@ -1416,35 +1943,35 @@ header {
     width: 888px;
     height: 310px;
     margin-top: 10px;
-    border: 1px solid #E8E8E8;
+    border: 1px solid #e8e8e8;
 }
 
 .clothes:hover {
-    border-color: #FF4400;
+    border-color: #f40;
 }
 
 .clothes h3,
 .outdoors-treasure h3,
 .foods-amusement h3,
 .cars-entertainment h3 {
-    font-weight: bold;
     font-size: 15px;
-    color: #3C3C3C;
+    font-weight: bold;
     line-height: 22px;
-    padding-left: 13px;
-    border-left: 2px solid #FF4400;
     margin-top: 15px;
     margin-left: -1px;
+    padding-left: 13px;
+    color: #3c3c3c;
+    border-left: 2px solid #f40;
 }
 
 .clothes .hide-title-border {
-    border: none;
     padding-left: 15px;
+    border: none;
 }
 
 .clothes ul {
-    display: inline-block;
     line-height: 31px;
+    display: inline-block;
     margin: 12px 0 0 12px;
 }
 
@@ -1455,18 +1982,18 @@ header {
 
 .clothes ul a {
     margin-right: 5px;
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
 .clothes .hover-color {
-    color: #FF4400;
+    color: #f40;
 }
 
 .clothes .pictures {
     display: inline-block;
+    float: right;
     width: 430px;
     height: 280px;
-    float: right;
     margin-top: -22px;
     margin-right: 13px;
 }
@@ -1506,9 +2033,9 @@ header {
 .foods,
 .cars {
     float: left;
-    padding-right: 7px;
-    border: 1px solid #F4F4F4;
     height: 258px;
+    padding-right: 7px;
+    border: 1px solid #f4f4f4;
 }
 
 .outdoors-treasure .pictures,
@@ -1516,12 +2043,12 @@ header {
 .cars-entertainment .pictures {
     width: 422px;
     height: 96px;
-    border-bottom: 1px solid #EEEEEE;
     margin: 16px 0 0 15px;
+    border-bottom: 1px solid #eee;
 }
 
 .outdoors-treasure .pictures a,
-.foods-amusement .pictures a, 
+.foods-amusement .pictures a,
 .cars-entertainment .pictures a {
     display: inline-block;
     float: left;
@@ -1534,7 +2061,7 @@ header {
 }
 
 .outdoors img,
-.foods img, 
+.foods img,
 .cars img {
     float: left;
 }
@@ -1546,9 +2073,9 @@ header {
     margin-left: 108px;
 }
 
-.outdoors-treasure .pictures a img+p,
-.foods-amusement .pictures a img+p,
-.cars-entertainment .pictures a img+p {
+.outdoors-treasure .pictures a img + p,
+.foods-amusement .pictures a img + p,
+.cars-entertainment .pictures a img + p {
     margin-top: 3px;
 }
 
@@ -1561,8 +2088,8 @@ header {
 .outdoors-treasure ul,
 .foods-amusement ul,
 .cars-entertainment ul {
-    display: inline-block;
     line-height: 30px;
+    display: inline-block;
 }
 
 .outdoors-treasure li a,
@@ -1593,15 +2120,15 @@ header {
 .outdoors-treasure .treasure,
 .foods-amusement .makeup,
 .cars-entertainment .entertainment {
-    border: 1px solid #F4F4F4;
-    margin-left: -1px;
     height: 258px;
+    margin-left: -1px;
+    border: 1px solid #f4f4f4;
 }
 
 .outdoors-treasure .border-left-hover,
 .foods-amusement .border-left-hover,
 .cars-entertainment .border-left-hover {
-    border-left-color: #FF4400;
+    border-left-color: #f40;
 }
 
 .outdoors-treasure .treasure:hover,
@@ -1610,7 +2137,7 @@ header {
 .foods-amusement .foods:hover,
 .cars-entertainment .entertainment:hover,
 .cars-entertainment .cars:hover {
-    border-color: #FF4400;
+    border-color: #f40;
 }
 
 .outdoors-treasure .treasure,
@@ -1637,8 +2164,8 @@ header {
 .outdoors-treasure .hide-title-border,
 .foods-amusement .hide-title-border,
 .cars-entertainment .hide-title-border {
-    border: none;
     padding-left: 15px;
+    border: none;
 }
 
 .ad-picture {
@@ -1647,41 +2174,41 @@ header {
 }
 
 .electronics {
+    position: relative;
+    float: left;
     width: 889px;
     height: 258px;
-    float: left;
-    border: 1px solid #E8E8E8;
     margin-top: 14px;
-    position: relative;
+    border: 1px solid #e8e8e8;
 }
 
 .electronics:hover {
-    border-color: #2EB5E7;
+    border-color: #2eb5e7;
 }
 
 .electronics i {
+    display: block;
     width: 94px;
     height: 20px;
     margin: 16px 0 0 12px;
-    display: block;
     background: url(../images/taobao_sprites_1.png) 0 -58px;
 }
 
 .electronics-pictures {
-    margin: 19px 0 0 15px;
-    padding-bottom: 19px;
-    border-bottom: 1px solid #EEEEEE;
     float: left;
     width: 545px;
+    margin: 19px 0 0 15px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #eee;
 }
 
 .massage-chair,
 .earphone,
 .toolbox {
-    display: inline-block;
-    width: 170px;
     line-height: 26px;
+    display: inline-block;
     float: left;
+    width: 170px;
 }
 
 .massage-chair img,
@@ -1695,12 +2222,12 @@ header {
 .earphone p:last-child,
 .toolbox p:last-child {
     font-weight: bold;
-    float: left;
     line-height: 12px;
-    padding: 3px 7px 3px 4px;
-    background-color: #FF4400;
-    color: #FFFFFF;
+    float: left;
     margin-top: 4px;
+    padding: 3px 7px 3px 4px;
+    color: #fff;
+    background-color: #f40;
 }
 
 .electronics-lists {
@@ -1709,8 +2236,8 @@ header {
 }
 
 .electronics-lists ul {
-    display: inline-block;
     line-height: 30px;
+    display: inline-block;
 }
 
 .electronics-lists ul:first-child {
@@ -1753,25 +2280,25 @@ header {
 
 .foods-children .foods,
 .foods-children .children-wear {
-    height: 258px;
-    width: 444px;
     float: left;
-    border: 1px solid #E8E8E8;
+    width: 444px;
+    height: 258px;
+    border: 1px solid #e8e8e8;
 }
 
 .foods-children .foods:hover {
-    border-color: #FF4400;
+    border-color: #f40;
 }
 
 .foods-children .right-border {
-    border-right-color: #FF4400;
+    border-right-color: #f40;
 }
 
 .foods-children .foods i {
-    margin: 16px 0 0 12px;
+    display: inline-block;
     width: 54px;
     height: 20px;
-    display: inline-block;
+    margin: 16px 0 0 12px;
     background: url(../images/taobao_sprites_1.png) -91px -78px;
 }
 
@@ -1780,35 +2307,35 @@ header {
 }
 
 .foods-children .pictures a {
-    display: inline-block;
     position: relative;
+    display: inline-block;
     margin: 0 11px 0 15px;
 }
 
 .foods-children .pictures p {
     position: absolute;
-    white-space: nowrap;
-    padding: 2px 0 2px 8px;
     top: 59px;
     left: 0;
+    padding: 2px 0 2px 8px;
+    white-space: nowrap;
+    color: #fff;
     background-color: #31a500;
-    color: #FFFFFF;
 }
 
 .foods-children .pictures span {
     position: absolute;
+    top: 0;
+    right: -16px;
     border: 8px solid #31a500;
     border-right-color: transparent;
-    right: -16px;
-    top: 0;
 }
 
 .foods-children .pictures .alter-color {
-    background-color: #FF4A00;
+    background-color: #ff4a00;
 }
 
 .foods-children .pictures .alter-border-color {
-    border-color: #FF4A00;
+    border-color: #ff4a00;
     border-right-color: transparent;
 }
 
@@ -1817,8 +2344,8 @@ header {
 }
 
 .foods-children .foods-lists ul {
-    display: inline-block;
     line-height: 30px;
+    display: inline-block;
 }
 
 .foods-children .foods-lists ul:first-child {
@@ -1839,17 +2366,17 @@ header {
 }
 
 .foods-children .children-wear:hover {
-    border-color: #FF4400;
+    border-color: #f40;
 }
 
 .children-wear h3 {
     font-weight: bold;
-    color: #3C3C3C;
     line-height: 22px;
     margin-top: 15px;
-    padding-left: 12px;
-    border-left: 2px solid #FF4400;
     margin-left: -1px;
+    padding-left: 12px;
+    color: #3c3c3c;
+    border-left: 2px solid #f40;
 }
 
 .children-wear .hide-title-border {
@@ -1867,11 +2394,11 @@ header {
 }
 
 .children-wear .children-pictures {
-    margin: 16px 0 0 15px;
-    width: 422px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #EEEEEE;
     float: left;
+    width: 422px;
+    margin: 16px 0 0 15px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
 }
 
 .children-wear .children-pictures img {
@@ -1915,53 +2442,55 @@ header {
 }
 
 .family {
+    position: relative;
     float: left;
     width: 888px;
     height: 310px;
-    border: 1px solid #E8E8E8;
-    position: relative;
     margin-top: 13px;
+    border: 1px solid #e8e8e8;
 }
 
 .family:hover {
-    border-color: #FFCB00;
+    border-color: #ffcb00;
 }
 
 .family .icon {
     display: inline-block;
     width: 80px;
     height: 20px;
-    background: url(../images/taobao_sprites_1.png) -146px -48px;
     margin: 18px 0 0 12px;
+    background: url(../images/taobao_sprites_1.png) -146px -48px;
 }
 
 .family .code {
+    position: relative;
     display: inline-block;
     width: 14px;
     height: 12px;
-    background: url(../images/small_2d_code.png);
-    vertical-align: 2px;
     margin-left: 4px;
-    position: relative;
     cursor: pointer;
+    vertical-align: 2px;
+    background: url(../images/small_2d_code.png);
 }
 
-.family .code div, .go-shopping .icon div {
-    z-index: 1;
+.family .code div,
+.go-shopping .icon div {
     position: absolute;
-    color: #6c6c6c;
-    padding: 16px 21px 12px;
-    border: 1px solid #EEEEEE;
-    background-color: #FFFFFF;
+    z-index: 1;
     top: 26px;
     left: -1px;
-    transition: top 0.3s ease-in-out;
     visibility: hidden;
+    padding: 16px 21px 12px;
+    transition: top .3s ease-in-out;
+    color: #6c6c6c;
+    border: 1px solid #eee;
+    background-color: #fff;
 }
 
-.family .code:hover div, .go-shopping .icon:hover div {
-    visibility: visible;
+.family .code:hover div,
+.go-shopping .icon:hover div {
     top: -8px;
+    visibility: visible;
 }
 
 .family .code p {
@@ -1969,28 +2498,28 @@ header {
 }
 
 .family .family-nav {
-    display: inline-block;
     position: absolute;
     top: 19px;
     left: 334px;
+    display: inline-block;
 }
 
 .family .family-nav i {
     display: inline-block;
     width: 6px;
     height: 10px;
-    background: url(../images/arrow_right_2.png);
-    vertical-align: -1px;
     margin-right: 6px;
+    vertical-align: -1px;
+    background: url(../images/arrow_right_2.png);
 }
 
 .family .family-nav a {
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
 .family .lists-pictures ul {
-    display: inline-block;
     line-height: 30px;
+    display: inline-block;
 }
 
 .family .lists-pictures {
@@ -2010,43 +2539,43 @@ header {
     display: inline-block;
     width: 370px;
     height: 250px;
-    vertical-align: 1px;
     margin-left: 3px;
+    vertical-align: 1px;
     vertical-align: -8px;
 }
 
 .family .lists-pictures .pictures > a {
+    position: relative;
     display: inline-block;
     margin-right: 6px;
     margin-bottom: 9px;
-    position: relative;
 }
 
 .family .lists-pictures .pictures div {
     position: absolute;
-    width: 100%;
     bottom: 0;
     left: 0;
+    width: 100%;
 }
 
 .family .lists-pictures .pictures div span {
+    line-height: 28px;
     display: inline-block;
     float: left;
-    line-height: 28px;
     text-align: center;
-    opacity: 0.8;
+    opacity: .8;
 }
 
 .family .lists-pictures .pictures div span:first-child {
     width: 118px;
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 
 .family .lists-pictures .pictures div span:last-child {
-    width: 52px;
     font-weight: bold;
-    color: #FFFFFF;
-    background-color: #FFCA00;
+    width: 52px;
+    color: #fff;
+    background-color: #ffca00;
 }
 
 .family .family-picture {
@@ -2061,8 +2590,8 @@ header {
 }
 
 .family .family-picture a {
-    width: 130px;
     display: inline-block;
+    width: 130px;
     margin-right: 11px;
 }
 
@@ -2132,65 +2661,65 @@ header {
     float: left;
     width: 879px;
     height: 250px;
-    border: 1px solid #E8E8E8;
     margin-top: 12px;
+    border: 1px solid #e8e8e8;
 }
 
 .various-service .service-tab h3 {
-    font-weight: bold;
     font-size: 15px;
+    font-weight: bold;
     line-height: 22px;
     margin-top: 8px;
     padding: 0 15px 0 15px;
-    border-right: 1px solid #E8E8E8;
+    border-right: 1px solid #e8e8e8;
 }
 
 .various-service .service-tab li {
     float: left;
     height: 30px;
-    padding-top: 2px;
     margin-top: -1px;
-    color: #6C6C6C;
+    padding-top: 2px;
     cursor: pointer;
+    color: #6c6c6c;
 }
 
 .various-service .service-tab li:hover {
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
 .various-service .service-tab .show-border {
     padding-top: 0;
-    border-top: 2px solid #FF4400;
+    border-top: 2px solid #f40;
 }
 
 .various-service .service-tab .hover-color {
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
 .various-service .service-content {
-    margin: 50px 0 0 15px;
     position: relative;
+    margin: 50px 0 0 15px;
 }
 
 .various-service .service-content .life-service-primary > a {
+    position: relative;
     display: inline-block;
     margin-right: 6px;
-    position: relative;
 }
 
 .various-service .service-content .life-service-primary > a:hover span {
-    background-color: rgba(255,255,255,1);
-    color: #FF4400;
+    color: #f40;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .various-service .service-content a span {
-    position: absolute;
-    width: 100%;
     line-height: 28px;
-    text-align: center;
-    left: 0;
+    position: absolute;
     bottom: 0;
-    background-color: rgba(255,255,255,0.8);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .various-service .service-content .life-service {
@@ -2217,8 +2746,8 @@ header {
 }
 
 .various-service .service-content ul {
-    display: inline-block;
     line-height: 30px;
+    display: inline-block;
     margin-top: 10px;
 }
 
@@ -2231,8 +2760,8 @@ header {
 }
 
 .various-service .service-content ul a:first-child {
-    font-weight: bold;   
-    margin-right: 8px; 
+    font-weight: bold;
+    margin-right: 8px;
 }
 
 .ad-picture.right-offset {
@@ -2245,18 +2774,18 @@ header {
 }
 
 .taobao-shoppings > div {
+    position: relative;
     float: left;
     width: 169px;
     height: 334px;
-    padding: 13px 14px 16px;
-    border: 1px solid #E8E8E8;
     margin-left: -1px;
-    position: relative;
+    padding: 13px 14px 16px;
+    border: 1px solid #e8e8e8;
 }
 
 .taobao-shoppings > div:hover {
-    border-color: #FF4400;
     z-index: 1;
+    border-color: #f40;
 }
 
 .taobao-shoppings > div:first-child {
@@ -2265,37 +2794,37 @@ header {
 
 .taobao-shoppings h2 {
     font-weight: bold;
-    color: #3C3C3C;
     cursor: pointer;
+    color: #3c3c3c;
 }
 
 .taobao-shoppings h2 i {
+    position: relative;
     display: inline-block;
     width: 14px;
     height: 13px;
-    background: url(../images/taobao_shoppings_2d_code.png);
     margin: 3px 0 0;
     vertical-align: top;
-    position: relative;
+    background: url(../images/taobao_shoppings_2d_code.png);
 }
 
 .taobao-shoppings h2 i div {
     position: absolute;
+    z-index: 1;
+    top: 26px;
+    left: -1px;
+    visibility: hidden;
     width: 100px;
     height: 124px;
     padding: 15px 21px 11px 20px;
-    border: 1px solid #EEEEEE;
-    background-color: #FFFFFF;
-    top: 26px;
-    left: -1px;
-    transition: top 0.3s ease-in-out;
-    visibility: hidden;
-    z-index: 1;
+    transition: top .3s ease-in-out;
+    border: 1px solid #eee;
+    background-color: #fff;
 }
 
 .taobao-shoppings h2 i:hover div {
-    visibility: visible;
     top: 0;
+    visibility: visible;
 }
 
 .taobao-shoppings a {
@@ -2307,34 +2836,35 @@ header {
 }
 
 .taobao-shoppings h2 p {
-    text-align: center;
     font-weight: normal;
-    color: #6C6C6C;
     margin-top: 9px;
+    text-align: center;
+    color: #6c6c6c;
 }
 
 .taobao-shoppings .pictures-primary em {
     font-weight: bold;
     margin-top: 6px;
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
-.taobao-shoppings .pictures-primary span, .taobao-shoppings .pictures-primary em {
+.taobao-shoppings .pictures-primary span,
+.taobao-shoppings .pictures-primary em {
     display: block;
     text-align: center;
 }
 
 .taobao-shoppings .pictures-primary > span {
     line-height: 19px;
-    background-color: #F5F5F5;
-    height: 50px;
     position: absolute;
     width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
 }
 
 .taobao-shoppings .pictures-primary {
-    margin-top: 12px;
     position: relative;
+    margin-top: 12px;
 }
 
 .taobao-shoppings .pictures-secondary {
@@ -2343,8 +2873,8 @@ header {
 
 .taobao-shoppings .pictures-secondary span {
     position: absolute;
-    margin-top: 7px;
     width: 100%;
+    margin-top: 7px;
     text-align: center;
 }
 
@@ -2357,8 +2887,8 @@ header {
 }
 
 .taobao-shoppings .text {
-    margin-top: 25px;
     line-height: 26px;
+    margin-top: 25px;
 }
 
 .taobao-shoppings .text p:first-child a {
@@ -2374,11 +2904,11 @@ header {
 }
 
 .taobao-shoppings > div:last-child .pictures-wrapper .pictures-secondary {
-    height: 90px;
-    border: 1px solid #EEEEEE;
-    display: block;
-    margin: 0;
     position: relative;
+    display: block;
+    height: 90px;
+    margin: 0;
+    border: 1px solid #eee;
 }
 
 .taobao-shoppings > div:last-child .pictures-secondary div {
@@ -2389,9 +2919,9 @@ header {
 .taobao-shoppings > div:last-child .pictures-secondary img {
     position: absolute;
     top: 0;
+    right: 10px;
     bottom: 0;
     margin: auto 0;
-    right: 10px;
 }
 
 .taobao-shoppings > div:last-child .pictures-secondary p:first-child {
@@ -2399,8 +2929,8 @@ header {
 }
 
 .taobao-shoppings > div:last-child .pictures-secondary p:last-child {
-    text-align: right;
     margin-top: 4px;
+    text-align: right;
 }
 
 .taobao-shoppings > div:last-child .text {
@@ -2408,14 +2938,14 @@ header {
 }
 
 .go-shopping {
-    width: 100%;
     float: left;
+    width: 100%;
     margin-top: 15px;
 }
 
 .go-shopping .shopping-header {
     display: block;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
 .go-shopping .title {
@@ -2426,32 +2956,32 @@ header {
 }
 
 .go-shopping .icon {
+    position: relative;
     display: inline-block;
     width: 14px;
     height: 12px;
-    background: url(../images/small_2d_code.png);
     vertical-align: 1px;
-    position: relative;
+    background: url(../images/small_2d_code.png);
 }
 
 .go-shopping .shopping-pictures {
-    float: left;                                                                 
+    float: left;
 }
 
 .go-shopping .shopping-pictures a {
-    float: left;
     position: relative;
+    float: left;
     margin-right: 12px;
 }
 
 .go-shopping .shopping-pictures a span {
-    position: absolute;
     line-height: 25px;
-    left: 0;
+    position: absolute;
     right: 0;
     bottom: 0;
+    left: 0;
     text-align: center;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .go-shopping .shopping-slider-wrapper {
@@ -2470,12 +3000,12 @@ header {
 }
 
 .go-shopping .last-picture a {
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
 .go-shopping .last-picture a span {
-    color: #E1E1E1;
     font-weight: bold;
+    color: #e1e1e1;
 }
 
 .go-shopping .last-picture .left-bracket {
@@ -2490,17 +3020,18 @@ header {
     margin-top: 20px;
 }
 
-.taobao-shopping-items, .taobao-shopping-items > div {
+.taobao-shopping-items,
+.taobao-shopping-items > div {
     float: left;
 }
 
 .taobao-shopping-items > div {
+    position: relative;
     float: left;
     width: 170px;
-    padding: 18px 13px 16px 14px;
-    border: 1px solid #E8E8E8;
-    position: relative;
     margin-left: -1px;
+    padding: 18px 13px 16px 14px;
+    border: 1px solid #e8e8e8;
 }
 
 .taobao-shopping-items > div:first-child {
@@ -2508,15 +3039,15 @@ header {
 }
 
 .taobao-shopping-items > div:hover {
-    border-color: #FF4400;
     z-index: 1;
+    border-color: #f40;
 }
 
 .taobao-shopping-items h2 {
     font-weight: bold;
-    color: #3C3C3C;
-    cursor: pointer;
     margin-bottom: 10px;
+    cursor: pointer;
+    color: #3c3c3c;
 }
 
 .taobao-shopping-items h2:hover i {
@@ -2524,33 +3055,33 @@ header {
 }
 
 .taobao-shopping-items h2 i {
+    position: relative;
     display: inline-block;
     width: 14px;
     height: 13px;
     margin: 5px 0 0 4px;
     vertical-align: top;
-    position: relative;
     background: url(../images/taobao_shoppings_2d_code.png);
 }
 
 .taobao-shopping-items h2 i div {
-    position: absolute;
-    color: #6C6C6C;
     font-weight: normal;
-    text-align: center;
-    padding: 20px 25px 11px;
-    border: 1px solid #EEEEEE;
+    position: absolute;
+    z-index: 1;
     top: 26px;
     left: -1px;
-    transition: top 0.3s ease-in-out;
     visibility: hidden;
-    z-index: 1;
-    background-color: #FFFFFF;
+    padding: 20px 25px 11px;
+    transition: top .3s ease-in-out;
+    text-align: center;
+    color: #6c6c6c;
+    border: 1px solid #eee;
+    background-color: #fff;
 }
 
 .taobao-shopping-items h2 i:hover div {
-    visibility: visible;
     top: 0;
+    visibility: visible;
 }
 
 .taobao-shopping-items h2 img {
@@ -2599,8 +3130,8 @@ header {
 .hot-sale h2 {
     font-size: 18px;
     font-weight: bold;
-    color: #3C3C3C;
     float: left;
+    color: #3c3c3c;
 }
 
 .hot-sale .hot-header {
@@ -2615,12 +3146,12 @@ header {
 .hot-sale .hot-header div a {
     display: inline-block;
     padding: 0 10px 0 5px;
-    border-right: 1px solid #E8E8E8;
+    border-right: 1px solid #e8e8e8;
 }
 
 .hot-sale .hot-header .last-link {
-    border: none;
     padding-right: 10px;
+    border: none;
 }
 
 .hot-sale .hot-sale-items {
@@ -2629,25 +3160,26 @@ header {
 }
 
 .hot-sale .single-item {
-    width: 214px;
-    float: left;
-    padding: 10px 10px 9px 9px;
-    border: 1px solid #E8E8E8;
     position: relative;
+    float: left;
+    width: 214px;
+    padding: 10px 10px 9px 9px;
+    border: 1px solid #e8e8e8;
 }
 
 .hot-sale .price {
     font-family: arial;
     font-size: 16px;
     font-weight: bold;
-    color: #FF4400;
+    color: #f40;
 }
 
 .hot-sale .single-item .price span {
     margin-right: 5px;
 }
 
-.hot-sale .free-icon, .hot-sale .new-icon {
+.hot-sale .free-icon,
+.hot-sale .new-icon {
     display: inline-block;
     width: 26px;
     height: 14px;
@@ -2663,7 +3195,7 @@ header {
 }
 
 .hot-sale .sales {
-    color: #9C9C9C;
+    color: #9c9c9c;
 }
 
 .hot-sale .single-item .price-wrapper {
@@ -2674,16 +3206,17 @@ header {
     margin-top: 6px;
 }
 
-.hot-sale .free-icon, .hot-sale .new-icon {
+.hot-sale .free-icon,
+.hot-sale .new-icon {
     margin-right: 5px;
 }
 
 .hot-sale .reference {
-    color: #6C6C6C;
     line-height: 22px;
+    height: 44px;
     margin-top: 10px;
     cursor: pointer;
-    height: 44px;
+    color: #6c6c6c;
 }
 
 .hot-sale .comment-collection {
@@ -2691,7 +3224,7 @@ header {
 }
 
 .hot-sale .comment-collection a {
-    color: #9C9C9C;
+    color: #9c9c9c;
 }
 
 .hot-sale .comment-collection .comment {
@@ -2700,17 +3233,17 @@ header {
 
 .hot-sale .comment-collection .comment:hover,
 .hot-sale .comment-collection .collection:hover {
-    color: #9C9C9C;
+    color: #9c9c9c;
 }
 
 .hot-sale .item-hover {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #FF4400;
-    opacity: 0.9;
-    cursor: pointer;
     display: none;
+    cursor: pointer;
+    opacity: .9;
+    background-color: #f40;
 }
 
 .hot-sale .single-item .item-hover {
@@ -2719,8 +3252,8 @@ header {
 }
 
 .hot-sale .single-item:hover {
-    border-color: #FF4400;
     z-index: 1;
+    border-color: #f40;
 }
 
 .hot-sale .single-item:hover .item-hover {
@@ -2729,23 +3262,23 @@ header {
 
 .hot-sale .item-hover p {
     font-size: 14px;
-    color: #FFFFFF;
     position: absolute;
     bottom: 68px;
     left: 10px;
+    color: #fff;
 }
 
 .hot-sale .item-hover a {
-    color: #FF4400;
-    background-color: #FFFFFF;
     position: absolute;
-    padding: 9px 25px;
-    border-radius: 4px;
     bottom: 25px;
     left: 10px;
+    padding: 9px 25px;
+    color: #f40;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
-.hot-sale .single-item, 
+.hot-sale .single-item,
 .hot-sale .double-item {
     margin-left: -1px;
 }
@@ -2768,12 +3301,12 @@ header {
 
 .hot-sale .double-item .sales-wrapper {
     margin-top: 5px;
-} 
+}
 
 .hot-sale .double-item .each-item {
-    padding: 10px 10px 7px 11px;
-    border: 1px solid #E8E8E8;
     position: relative;
+    padding: 10px 10px 7px 11px;
+    border: 1px solid #e8e8e8;
 }
 
 .hot-sale .double-item .item-hover {
@@ -2791,8 +3324,8 @@ header {
 }
 
 .hot-sale .double-item .each-item:hover {
-    border-color: #FF4400;
     z-index: 1;
+    border-color: #f40;
 }
 
 .hot-sale .double-item .each-item:hover .item-hover {
@@ -2810,11 +3343,11 @@ header {
 }
 
 .picture-show .picture-wrapper {
-    float: left;
-    padding: 10px 10px 14px;
-    border: 1px solid #E8E8E8;
-    margin-left: -1px;
     position: relative;
+    float: left;
+    margin-left: -1px;
+    padding: 10px 10px 14px;
+    border: 1px solid #e8e8e8;
 }
 
 .picture-show .picture-wrapper img {
@@ -2822,8 +3355,8 @@ header {
 }
 
 .picture-show .picture-wrapper:hover {
-    border-color: #FF4400;
     z-index: 1;
+    border-color: #f40;
 }
 
 .taobao-helper {
@@ -2831,7 +3364,7 @@ header {
     width: 100%;
     margin-top: 47px;
     padding-bottom: 45px;
-    border-bottom: 2px solid #FF5400;
+    border-bottom: 2px solid #ff5400;
 }
 
 .taobao-helper > div {
@@ -2840,9 +3373,9 @@ header {
 }
 
 .taobao-helper .helper {
-    margin-left: 25px;
     height: 95px;
-    border-right: 1px solid #EEEEEE;
+    margin-left: 25px;
+    border-right: 1px solid #eee;
 }
 
 .taobao-helper .title {
@@ -2852,9 +3385,9 @@ header {
 .taobao-helper h2 {
     font-weight: bold;
     display: inline-block;
-    color: #3C3C3C;
-    vertical-align: top;
     margin: 6px 0 0 9px;
+    vertical-align: top;
+    color: #3c3c3c;
 }
 
 .taobao-helper .protect-icon {
@@ -2892,7 +3425,7 @@ header {
 
 .taobao-helper a {
     margin-right: 10px;
-    color: #9C9C9C;
+    color: #9c9c9c;
 }
 
 .taobao-helper .freshman {
@@ -2933,8 +3466,8 @@ header {
 }
 
 .links {
-    border-top: 1px solid #DDDDDD;
     float: left;
+    border-top: 1px solid #ddd;
 }
 
 .links ul {
@@ -2948,7 +3481,7 @@ header {
 .links a {
     font-size: 12px;
     padding: 0 9px;
-    border-right: 1px solid #F1F1F1;
+    border-right: 1px solid #f1f1f1;
 }
 
 .links li a:first-child {
@@ -2966,11 +3499,11 @@ header {
 .taobao-info {
     float: left;
     margin-top: 16px;
-    border-top: 1px solid #DDDDDD;
+    border-top: 1px solid #ddd;
 }
 
 .taobao-info span {
-    color: #9C9C9C;
+    color: #9c9c9c;
 }
 
 .taobao-info .info-wrapper {
@@ -2981,7 +3514,8 @@ header {
     font-size: 0;
 }
 
-.taobao-info a, .taobao-info span {
+.taobao-info a,
+.taobao-info span {
     font-size: 12px;
 }
 
@@ -3015,8 +3549,8 @@ header {
 
 .footer-pictures a {
     display: inline-block;
-    margin-right: 15px;
     float: left;
+    margin-right: 15px;
 }
 
 .footer-pictures a:first-child {
@@ -3051,7 +3585,7 @@ header {
 
 .footer-pictures .record-icon {
     width: 94px;
-    background-position: -240px -140px; 
+    background-position: -240px -140px;
 }
 
 .footer-pictures .illegal-icon {
@@ -3065,15 +3599,15 @@ header {
 }
 
 .aside {
-    width: 290px;
     position: absolute;
     top: 80px;
     right: 0;
+    width: 290px;
 }
 
 .ali-app {
-    border: 1px solid #EEEEEE;
     padding-bottom: 14px;
+    border: 1px solid #eee;
 }
 
 .ali-app img {
@@ -3082,9 +3616,9 @@ header {
 }
 
 .ali-app a {
+    position: relative;
     display: inline-block;
     margin-right: 13px;
-    position: relative;
 }
 
 .ali-app a:hover .hover-img {
@@ -3092,16 +3626,16 @@ header {
 }
 
 .aside h3 {
-    color: #3C3C3C;
+    color: #3c3c3c;
 }
 
 .ali-app h3 {
-    cursor: pointer;
     margin: 20px 0 0 15px;
+    cursor: pointer;
 }
 
 .ali-app h3:hover {
-    color: #FF4400;
+    color: #f40;
 }
 
 .ali-app .app-icons {
@@ -3111,13 +3645,13 @@ header {
 
 .ali-app .hover-img {
     position: absolute;
-    padding: 12px;
-    border: 1px solid #FF4400;
     top: -99px;
     left: -32px;
-    background-color: #FFFFFF;
     display: none;
+    padding: 12px;
     cursor: default;
+    border: 1px solid #f40;
+    background-color: #fff;
 }
 
 .ali-app .hover-img img {
@@ -3127,27 +3661,27 @@ header {
 
 .ali-app .hover-img i {
     position: absolute;
-    border: 6px solid transparent;
-    border-top-color: #FF4400;
     bottom: -12px;
     left: 50%;
     margin-left: -3px;
+    border: 6px solid transparent;
+    border-top-color: #f40;
 }
 
 .ali-app .hover-img span {
     position: absolute;
-    border: 5px solid transparent;
-    border-top-color: #FFFFFF;
     bottom: -10px;
     left: 50%;
     margin-left: -2px;
+    border: 5px solid transparent;
+    border-top-color: #fff;
 }
 
 .aside .taobao-story {
-    border: 1px solid #EEEEEE;
+    position: relative;
     margin-top: -1px;
     padding-bottom: 16px;
-    position: relative;
+    border: 1px solid #eee;
 }
 
 .aside .taobao-story div {
@@ -3168,26 +3702,26 @@ header {
 }
 
 .aside .taobao-story span {
-    color: #CCCCCC;
-    font-weight: bold;
     font-size: 8px;
+    font-weight: bold;
     cursor: pointer;
+    color: #ccc;
 }
 
 .aside .taobao-story .picture {
     position: absolute;
-    right: 16px;
     top: 0;
+    right: 16px;
     bottom: 0;
     height: 50px;
     margin: auto 0;
 }
 
 .goods-stores-wrapper {
-    border: 1px solid #EEEEEE;
     margin-top: -1px;
     padding-bottom: 26px;
-    background-color: #F7F7F7;
+    border: 1px solid #eee;
+    background-color: #f7f7f7;
 }
 
 .goods-stores {
@@ -3195,39 +3729,39 @@ header {
 }
 
 .discover-goods .title {
-    margin-top: 21px;
     height: 21px;
+    margin-top: 21px;
     margin-bottom: 15px;
 }
 
 .discover-goods .title i {
     display: inline-block;
+    float: left;
     width: 90px;
     height: 20px;
     background: url(../images/taobao_sprites_1.png) 0 -78px;
-    float: left;
 }
 
 .discover-goods .title a {
-    color: #FF4400;
-    padding: 3px 4px;
-    border: 1px solid #FF4400;
-    vertical-align: top;
     display: inline-block;
     float: right;
     margin: -1px 1px 0 0;
+    padding: 3px 4px;
+    vertical-align: top;
+    color: #f40;
+    border: 1px solid #f40;
 }
 
 .discover-goods .title a:hover {
-    color: #FFFFFF;
-    background-color: #FF4400;
+    color: #fff;
+    background-color: #f40;
 }
 
 .discover-goods .goods-pictures {
-    border: 1px solid #EEEEEE;
-    padding: 17px 0 16px 16px;
-    margin-top: -1px;
     position: relative;
+    margin-top: -1px;
+    padding: 17px 0 16px 16px;
+    border: 1px solid #eee;
 }
 
 .discover-goods .goods-pictures-wrapper .goods-pictures:first-child {
@@ -3235,8 +3769,8 @@ header {
 }
 
 .discover-goods .goods-pictures > a {
-    display: block;
     font-size: 0;
+    display: block;
 }
 
 .discover-goods .goods-pictures-wrapper {
@@ -3251,8 +3785,8 @@ header {
 
 .discover-goods .goods-pictures .picture-info {
     display: inline-block;
-    vertical-align: top;
     margin-left: 8px;
+    vertical-align: top;
 }
 
 .discover-goods .goods-pictures .picture-info h3 {
@@ -3267,29 +3801,29 @@ header {
 .discover-goods .goods-pictures .picture-info .sales {
     font-weight: bold;
     margin-top: 35px;
-    color: #444444;
+    color: #444;
 }
 
 .discover-goods .goods-pictures .pull-down {
+    font-size: 0;
     position: absolute;
     z-index: 1;
-    font-size: 0;
-    background-color: #F5F5F5;
-    left: 0;
-    right: 0;
     top: 135px;
+    right: 0;
+    left: 0;
     overflow: hidden;
     height: 0;
-    transition: height 0.2s;
+    transition: height .2s;
+    background-color: #f5f5f5;
 }
 
 .discover-goods .goods-pictures:hover .pull-down {
     height: 30px;
-} 
+}
 
 .discover-goods .goods-pictures .pull-down a {
-    display: inline-block;
     font-size: 12px;
+    display: inline-block;
     padding: 9px 0;
 }
 
@@ -3303,43 +3837,43 @@ header {
 
 .discover-goods .goods-pictures .pull-down .custom {
     margin-left: 37px;
-    color: #FF4400;
+    color: #f40;
 }
 
 .discover-goods .pictures-wall {
-    border-width: 0 1px 1px; 
-    border-style: solid;
-    border-color: #EEEEEE;
     padding-bottom: 21px;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: #eee;
 }
 
 .discover-goods .pictures-wall .pictures {
+    font-size: 0;
     width: 228px;
     height: 230px;
-    font-size: 0;
     margin: 0 auto;
     padding-top: 14px;
 }
 
 .discover-goods .pictures-wall .pictures a {
+    position: relative;
     float: left;
     margin: 4px 3px;
-    position: relative;
 }
 
 .discover-goods .pictures-wall .pictures .goods-info {
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
     width: 50px;
     padding: 8px 10px 7px 10px;
-    background-color: #FF4400;
-    display: none;
+    background-color: #f40;
 }
 
 .discover-goods .pictures-wall .pictures .goods-info p {
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .discover-goods .pictures-wall .pictures .goods-intro {
@@ -3347,8 +3881,8 @@ header {
 }
 
 .discover-goods .pictures-wall .pictures .stars {
-    font-weight: bold;
     font-size: 13px;
+    font-weight: bold;
     margin-top: 7px;
 }
 
@@ -3358,32 +3892,34 @@ header {
 
 .goods-stores .switch-button {
     font-size: 0;
-    background-color: #E9E9E9;
     cursor: pointer;
-};
-
-.goods-stores .switch-button:hover span {
-    color: #3C3C3C;
+    background-color: #e9e9e9;
 }
+
+;
+.goods-stores .switch-button:hover span {
+    color: #3c3c3c;
+}
+
 .goods-stores .switch-button:hover i {
     background: url(../images/switch_dark.png);
 }
 
 .goods-stores .switch-button span {
     font-size: 12px;
-    margin-top: 12px;
     display: inline-block;
+    margin-top: 12px;
     margin-left: 8px;
-    color: #6C6C6C;
+    color: #6c6c6c;
 }
 
 .goods-stores .switch-button i {
     display: inline-block;
     width: 18px;
     height: 16px;
-    background: url(../images/switch_light.png);
     margin: 10px 0 11px 87px;
     vertical-align: top;
+    background: url(../images/switch_light.png);
 }
 
 .discover-stores {
@@ -3394,21 +3930,21 @@ header {
     display: inline-block;
     width: 90px;
     height: 20px;
-    background: url(../images/taobao_sprites_1.png) 0 -98px; 
+    background: url(../images/taobao_sprites_1.png) 0 -98px;
 }
 
 .discover-stores .title span {
-    display: inline-block;
-    vertical-align: top;
-    color: #6C6C6C;
     font-weight: bold;
+    display: inline-block;
     margin: 1px 0 0 5px;
+    vertical-align: top;
+    color: #6c6c6c;
 }
 
 .discover-stores .stores-pictures-wrapper {
     position: relative;
-    margin-top: 14px;
     height: 605px;
+    margin-top: 14px;
 }
 
 .discover-stores .pictures-group {
@@ -3417,14 +3953,14 @@ header {
 }
 
 .discover-stores h3 {
-    cursor: pointer;
     margin-bottom: 9px;
+    cursor: pointer;
 }
 
 .discover-stores .stores-pictures {
-    border: 1px solid #E8E8E8;
-    padding: 16px 14px;
     margin-top: -1px;
+    padding: 16px 14px;
+    border: 1px solid #e8e8e8;
 }
 
 .discover-stores .stores-pictures:first-child {
@@ -3437,14 +3973,14 @@ header {
 
 .discover-stores .stores-pictures .comments span {
     font-size: 12px;
-    padding-right: 6px;
-    border-right: 1px solid #EAEAEA;
     margin-right: 10px;
-    color: #6C6C6C;
+    padding-right: 6px;
+    color: #6c6c6c;
+    border-right: 1px solid #eaeaea;
 }
 
 .discover-stores .stores-pictures .comments .no-comment {
-    color: #CCCCCC;
+    color: #ccc;
 }
 
 .discover-stores .stores-pictures .pictures {
@@ -3455,14 +3991,14 @@ header {
 .discover-stores .stores-pictures .pictures a {
     display: inline-block;
     margin-right: 10px;
-} 
+}
 
 .discover-stores .stores-pictures .pictures a:last-child {
     margin: 0;
 }
 
 .goods-stores-wrapper .pictures-group {
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 
 .aside .goods-recommend {
