@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
     $(".header-menu > li").hover(function() {
         if ($(this).hasClass("list-website-navigation")) {
             $(this).children(".website-navigation-wrapper").addClass("hover-show");
@@ -63,52 +63,168 @@ $(document).ready(function() {
         $(this).parent().css("display", "none");
     });
 
-    $(".photo-slide").css({
-        "position": "absolute",
-        "width": "3640px",
-        "height": "280px",
-        "left": "-520px",
-        "transition": "transform 0.5s",
-        "transform": "translateX(0px)"
+    // $(".photo-slide").css({
+    //     "position": "absolute",
+    //     "width": "3640px",
+    //     "height": "280px",
+    //     "left": "-520px",
+    //     "transition": "transform 0.5s",
+    //     "transform": "translateX(0px)"
+    // });
+
+    // function switchSlider() {
+    //     //切换slider的底部导航
+    //     if ($(".slide-switch #slide-selected").index() != 4) {
+    //         $(".slide-switch #slide-selected").removeAttr("id").next().attr("id", "slide-selected");
+    //     } else {
+    //         $(".slide-switch #slide-selected").removeAttr("id");
+    //         $(".slide-switch li:first-child").attr("id", "slide-selected");
+    //     }
+    //     //切换slider的图片
+    //     var offset;
+    //     if ($(".photo-slide #photo-selected").index() == 5) {
+    //         $(".photo-slide #photo-selected").removeAttr("id").next().attr("id", "photo-selected");
+    //         offset = getTransform($(".photo-slide").css("transform"));
+    //         $(".photo-slide").css("transform", setTransform(parseInt(offset) - 520));
+    //         $(".photo-slide #photo-selected").removeAttr("id");
+    //         $(".photo-slide a:nth-child(7n+3)").attr("id", "photo-selected");
+    //         $(".photo-slide").one('transitionend', function() {
+    //             $(this).css("transition", "none");
+    //             $(this).css("transform", setTransform(0));
+    //         });
+    //     } else {
+    //         $(".photo-slide").css("transition", "transform 0.5s");
+    //         $(".photo-slide #photo-selected").removeAttr("id").next().attr("id", "photo-selected");
+    //         offset = getTransform($(".photo-slide").css("transform"));
+    //         $(".photo-slide").css("transform", setTransform(parseInt(offset) - 520));
+    //     }
+    // }
+
+    // setInterval(switchSlider, 3000);
+
+    // function getTransform(cssTransform) {
+    //     return cssTransform.split(",")[4].trim();
+    // }
+
+    // function setTransform(xOffset) {
+    //     return "translateX(" + xOffset + "px)";
+    // }
+
+    // function switchSlider() {
+    //     if ($("photo-slider-primary #photo-selected").index() == 4) {
+    //         $("photo-slider-primary secondary").css("left", "520px");
+    //     } else if ($("photo-slider-primary #photo-selected").index() == 0) {
+    //         $("photo-slider-primary secondary").css("left", "-2600px");
+    //     }
+    // }
+
+    //通过unslider插件的API控制幻灯片轮播效果
+    var primarySlider = $(".taobao-photo-slider .slider-pictures").unslider({
+        autoplay: true,
+        infinite: true,
+        speed: 400,
+        delay: 5000,
+        nav: false,
+        arrows: false
     });
 
-    function switchSlider() {
-        //切换slider的底部导航
-        if ($(".slide-switch #slide-selected").index() != 4) {
-            $(".slide-switch #slide-selected").removeAttr("id").next().attr("id", "slide-selected");
-        } else {
-            $(".slide-switch #slide-selected").removeAttr("id");
-            $(".slide-switch li:first-child").attr("id", "slide-selected");
-        }
-        //切换slider的图片
-        var offset;
-        if ($(".photo-slide #photo-selected").index() == 5) {
-            $(".photo-slide #photo-selected").removeAttr("id").next().attr("id", "photo-selected");
-            offset = getTransform($(".photo-slide").css("transform"));
-            $(".photo-slide").css("transform", setTransform(parseInt(offset) - 520));
-            $(".photo-slide #photo-selected").removeAttr("id");
-            $(".photo-slide a:nth-child(7n+3)").attr("id", "photo-selected");
-            $(".photo-slide").one('transitionend', function() {
-                $(this).css("transition", "none");
-                $(this).css("transform", setTransform(0));
+    primarySlider.on("unslider.change", function(event, index, slide) {
+        $(".photo-slider-primary .slide-switch li").eq(index % 5).css("background-color", "#FF4400").siblings().css("background-color", "#b7b7b7");
+    });
+
+    $(".photo-slider-primary .slide-left").click(function() {
+        primarySlider.data("unslider").prev();
+    });
+
+    $(".photo-slider-primary .slide-right").click(function() {
+        primarySlider.data("unslider").next();
+    });
+
+    $(".photo-slider-primary .slide-switch li").click(function() {
+        primarySlider.data("unslider").animate($(this).index());
+    });
+
+    //另一种轮播方法
+    // function slider() {
+    //     var pictureWidth = $(".photo-slider-secondary .photo-slide img").width();
+    //     var pictureList = $(".photo-slider-secondary .photo-slide ul");
+    //     $(".photo-slider-secondary .photo-slide li:last-child").prependTo(pictureList);
+    //     pictureList.css("left", -pictureWidth + "px");
+
+    //     setInterval(moveRight, 5000);
+
+    //     $(".photo-slider-secondary .slide-left").click(function() {
+    //         moveLeft();
+    //     });
+
+    //     $(".photo-slider-secondary .slide-right").click(function() {
+    //         moveRight();
+    //     });
+
+    //     function moveRight() {
+    //         pictureList.animate({
+    //             "left": - pictureWidth * 2 + "px"
+    //         }, 400, function() {
+    //             $(".photo-slider-secondary .photo-slide li:first-child").appendTo(pictureList);
+    //             pictureList.css("left", -pictureWidth + "px");
+    //         });
+    //     }
+
+    //     function moveLeft() {
+    //         pictureList.animate({
+    //             "left": 0
+    //         }, 400, function() {
+    //             $(".photo-slider-secondary .photo-slide li:last-child").prependTo(pictureList);
+    //             pictureList.css("left", -pictureWidth + "px");
+    //         });
+    //     }
+    // }
+
+    function slider(pictureWidth, pictureList, navLeft, navRight, interval, animationTime) {
+        pictureList.children().last().prependTo(pictureList);
+        pictureList.css("left", -pictureWidth + "px");
+        setInterval(moveRight, interval);
+
+        navLeft.click(function() {
+            moveLeft();
+        });
+
+        navRight.click(function() {
+            moveRight();
+        });
+
+        function moveRight() {
+            pictureList.animate({
+                "left": - pictureWidth * 2 + "px"
+            }, animationTime, function() {
+                pictureList.children().first().appendTo(pictureList);
+                pictureList.css("left", -pictureWidth + "px");
             });
-        } else {
-            $(".photo-slide").css("transition", "transform 0.5s");
-            $(".photo-slide #photo-selected").removeAttr("id").next().attr("id", "photo-selected");
-            offset = getTransform($(".photo-slide").css("transform"));
-            $(".photo-slide").css("transform", setTransform(parseInt(offset) - 520));
+        }
+
+        function moveLeft() {
+            pictureList.animate({
+                "left": 0
+            }, animationTime, function() {
+                pictureList.children().last().prependTo(pictureList);
+                pictureList.css("left", -pictureWidth + "px");
+            });
         }
     }
 
-    setInterval(switchSlider, 3000);
-
-    function getTransform(cssTransform) {
-        return cssTransform.split(",")[4].trim();
+    function sliderSecondary() {
+        var pictureWidth = $(".photo-slider-secondary .photo-slide img").width();
+        var pictureList = $(".photo-slider-secondary .photo-slide ul");
+        slider(pictureWidth, pictureList, $(".photo-slider-secondary .slide-left"), $(".photo-slider-secondary .slide-right"), 5000, 400);
     }
+    sliderSecondary();
 
-    function setTransform(xOffset) {
-        return "translateX(" + xOffset + "px)";
+    function shoppingSlider() {
+        var pictureWidth = $(".shopping-slider li img").width();
+        var pictureList = $(".shopping-slider ul");
+        slider(pictureWidth, pictureList, $(".shopping-slider-wrapper .nav-left"), $(".shopping-slider-wrapper .nav-right"), 3000, 300);
     }
+    shoppingSlider();
 
     $(".taobao-announcement-tab li:first-child").addClass("hover");
 
@@ -184,7 +300,7 @@ $(document).ready(function() {
     $(".children-wear").hover(function() {
         $(this).children("h3").addClass("hide-title-border");
         $(".foods-children .foods").addClass("right-border");
-    }, function(){
+    }, function() {
         $(this).children("h3").removeClass("hide-title-border");
         $(".foods-children .foods").removeClass("right-border");
     });

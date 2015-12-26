@@ -55,7 +55,6 @@ header {
 .header a {
     position: relative;
     float: left;
-    margin-top: 1px;
 }
 
 .header li {
@@ -85,12 +84,12 @@ header {
 
 .image-shopping-cart,
 .image-star {
-    margin-top: 10px;
+    margin-top: 11px;
     margin-right: 6px;
 }
 
 .image-menu {
-    margin-top: 13px;
+    margin-top: 14px;
     margin-right: 8px;
 }
 
@@ -120,7 +119,7 @@ header {
 }
 
 .header-menu .divider {
-    padding: 0 5px 0 4px;
+    padding: 0 5px;
 }
 
 .header-menu .divider:hover {
@@ -780,17 +779,15 @@ header {
     height: 280px;
 }
 
-
-/*.photo-slider-primary .photo-slide {
+.photo-slider-primary .photo-slide {
     position: absolute;
     width: 3640px;
     height: 280px;
-    left: -520px;
-    transition: transform 0.5s;
-    transform: translateX(0px);
-}*/
+    left: 0;
+    transition: left 0.5s;
+}
 
-.photo-slide a {
+.photo-slide li {
     float: left;
 }
 
@@ -861,6 +858,15 @@ header {
     width: 520px;
     height: 200px;
     margin-top: 3px;
+}
+
+.photo-slider-secondary .photo-slide {
+    position: relative;
+}
+
+.photo-slider-secondary .photo-slide ul {
+    width: 600%;
+    position: absolute;
 }
 
 .photo-slider-secondary .slide-left {
@@ -2968,13 +2974,17 @@ header {
     float: left;
 }
 
-.go-shopping .shopping-pictures a {
+.go-shopping .shopping-pictures a, .go-shopping .shopping-slider-wrapper li a {
     position: relative;
     float: left;
     margin-right: 12px;
 }
 
-.go-shopping .shopping-pictures a span {
+.go-shopping .shopping-slider-wrapper li a {
+    margin-right: 0;
+}
+
+.go-shopping .shopping-pictures a span, .go-shopping .shopping-slider-wrapper li a span {
     line-height: 25px;
     position: absolute;
     right: 0;
@@ -2986,8 +2996,47 @@ header {
 
 .go-shopping .shopping-slider-wrapper {
     float: left;
-    width: 220px;
+    position: relative;
+}
+
+.go-shopping .shopping-slider {
+    float: left;
+    width: 180px;
     height: 180px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 38px 0 20px;
+}
+
+.go-shopping .shopping-slider-wrapper ul {
+    width: 300%;
+    position: absolute;
+}
+
+.go-shopping .shopping-slider-wrapper li {
+    float: left;
+}
+
+.go-shopping .shopping-slider-wrapper .nav-left, .go-shopping .shopping-slider-wrapper .nav-right {
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.go-shopping .shopping-slider-wrapper .nav-left {
+    background: url(../images/slider_left.png);
+    left: 3px;
+}
+
+.go-shopping .shopping-slider-wrapper .nav-right {
+    background: url(../images/slider_right.png);
+    right: 23px;
+}
+
+.go-shopping .shopping-slider-wrapper .nav-right {
+    background: url(../images/slider_right.png);
 }
 
 .go-shopping .last-picture {
