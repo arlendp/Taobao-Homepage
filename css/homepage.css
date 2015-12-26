@@ -338,7 +338,6 @@ header {
 
 .content {
     width: 1190px;
-    height: 500px;
     margin: 36px auto 0;
 }
 
@@ -353,7 +352,7 @@ header {
     display: inline-block;
     width: 142px;
     height: 58px;
-    margin: 28px 109px 0 0;
+    margin: 27px 108px 0 0;
     background: url(../images/taobao_sprites_1.png);
 }
 
@@ -363,7 +362,7 @@ header {
 }
 
 .search-goods {
-    margin-top: 20px;
+    margin-top: 19px;
     vertical-align: top;
 }
 
@@ -392,7 +391,7 @@ header {
 }
 
 .tab-search .treasure-color {
-    background-color: #ff4200;
+    background-color: #ff5400;
 }
 
 .tab-search .tab-hover:hover {
@@ -408,6 +407,7 @@ header {
 .search-input {
     position: relative;
     clear: both;
+    display: inline-block;
 }
 
 .input {
@@ -468,10 +468,10 @@ header {
     background-color: #f52b00;
 }
 
-.search-input .anvanced-search {
+.search-input .advanced-search {
     line-height: 18px;
     position: absolute;
-    top: -1px;
+    top: -2px;
     right: -39px;
     width: 24px;
     cursor: pointer;
@@ -483,7 +483,7 @@ header {
 
 .goods-introduction {
     position: absolute;
-    top: 49px;
+    top: 48px;
     width: 100%;
 }
 
@@ -507,9 +507,7 @@ header {
 
 .goods-introduction .link-more {
     float: right;
-    margin-top: -5px;
-    margin-right: 0;
-    margin-left: -1px;
+    margin: -5px 1px 0 0;
     padding: 4px 4px 2px 5px;
     border: 1px solid #eee;
 }
@@ -532,7 +530,7 @@ header {
 
 .two-dimension-code-wrapper {
     position: absolute;
-    top: 12px;
+    top: 11px;
     right: 0;
 }
 
@@ -551,13 +549,14 @@ header {
 }
 
 .two-dimension-code p {
-    margin: 9px 0 3px;
+    margin: 8px 0 3px;
     color: #f40;
 }
 
 .two-dimension-code img {
     width: 80px;
     height: 80px;
+    margin: 1px 0 0 2px;
 }
 
 .delete {

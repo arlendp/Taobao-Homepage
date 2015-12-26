@@ -26,7 +26,7 @@ $(window).load(function() {
             $(".search-input .input a").css("visibility", "visible");
             $(".tab-search .tab-tmall").removeClass("selected").removeClass("tmall-color").addClass("tab-hover");
             $(".tab-search .tab-store").removeClass("selected").removeClass("treasure-color").addClass("tab-hover");
-            $(".search-input .button-search").css("background-color", "#FF5500");
+            $(".search-input .button-search").css("background-color", "#FF4200");
             $(".search-input .treasure").css("visibility", "visible");
             $(".search-input .tmall").css("visibility", "hidden");
             $(".search-input input").attr("placeholder", "居家百货必抢清单");
@@ -46,7 +46,7 @@ $(window).load(function() {
             $(".search-input .input a").css("visibility", "hidden");
             $(".tab-search .tab-treasure").removeClass("selected").removeClass("treasure-color").addClass("tab-hover");
             $(".tab-search .tab-tmall").removeClass("selected").removeClass("tmall-color").addClass("tab-hover");
-            $(".search-input .button-search").css("background-color", "#FF5500");
+            $(".search-input .button-search").css("background-color", "#FF4200");
             $(".search-input .treasure").css("visibility", "visible");
             $(".search-input .tmall").css("visibility", "hidden");
             $(".search-input input").attr("placeholder", "");
