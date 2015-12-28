@@ -708,6 +708,7 @@ header {
 
 .taobao-information {
     display: inline-block;
+    margin-left: 10px;
 }
 
 .taobao-nav ul,
@@ -721,8 +722,9 @@ header {
 }
 
 .taobao-nav {
-    margin: 1px 0 0 10px;
+    margin: 1px 0 0;
     border-bottom: 2px solid #f40;
+    font-size: 0;
 }
 
 .taobao-primary-nav a {
@@ -733,14 +735,22 @@ header {
 }
 
 .taobao-primary-nav li {
-    margin-right: 11px;
+    margin-right: 14px;
     color: #f40;
+    font-size: 16px;
+}
+
+.taobao-primary-nav .market {
+    margin-right: 15px;
+}
+
+.taobao-primary-nav .headline {
+    margin-right: 10px;
 }
 
 .taobao-primary-nav li:last-child {
     font-weight: normal;
-    margin-right: 6px;
-    margin-left: -6px;
+    margin-right: 12px;
 }
 
 .taobao-primary-nav a:hover {
@@ -759,7 +769,7 @@ header {
 }
 
 .taobao-secondary-nav li {
-    margin-right: 6px;
+    margin-right: 9px;
 }
 
 .taobao-secondary-nav a {
@@ -769,7 +779,7 @@ header {
 
 .taobao-photo-slider {
     float: left;
-    margin: 7px 0 0 10px;
+    margin: 7px 0 0;
 }
 
 .photo-slider-primary {
@@ -777,6 +787,10 @@ header {
     overflow: hidden;
     width: 520px;
     height: 280px;
+}
+
+.photo-slider-primary .slider-pictures {
+    cursor: pointer;
 }
 
 .photo-slider-primary .photo-slide {
@@ -787,6 +801,10 @@ header {
     transition: left 0.5s;
 }
 
+.photo-slide ul {
+    cursor: pointer;
+}
+
 .photo-slide li {
     float: left;
 }
@@ -794,7 +812,17 @@ header {
 .taobao-photo-slider .slide-left,
 .taobao-photo-slider .slide-right {
     position: absolute;
+    opacity: 0;
 }
+
+.photo-slider-primary:hover .slide-left,
+.photo-slider-primary:hover .slide-right,
+.photo-slider-secondary:hover .slide-left,
+.photo-slider-secondary:hover .slide-right {
+    opacity: 1;
+}
+
+
 
 .slide-left i,
 .slide-right i {
@@ -909,7 +937,7 @@ header {
 }
 
 .taobao-announcement-tab li {
-    line-height: 26px;
+    line-height: 25px;
     float: left;
     width: 56px;
     height: 26px;
@@ -1031,12 +1059,20 @@ header {
 
 .taobao-self ul {
     display: inline-block;
-    margin: 13px 0 0 5px;
+    margin: 12px 0 0 6px;
     vertical-align: top;
 }
 
 .taobao-self li:first-child {
     margin-bottom: 11px;
+}
+
+.taobao-self .gold-coin {
+    margin: 0 2px 0 3px;
+}
+
+.taobao-self .members {
+    margin: 0 0 0 2px;
 }
 
 .taobao-self li:last-child img,
@@ -1057,18 +1093,22 @@ header {
     margin: 0 -2px 0 -2px;
 }
 
-.taobao-self div {
-    margin: 7px 0 0 7px;
+.taobao-self .operation {
+    margin: 8px 0 0 7px;
+    font-size: 0;
 }
 
-.taobao-self div a {
+.taobao-self .operation a {
     font-weight: bold;
     display: inline-block;
+    font-size: 12px;
     color: #fff;
     background-color: #f40;
+    vertical-align: top;
+    margin-right: 7px;
 }
 
-.taobao-self div i {
+.taobao-self .operation i {
     display: inline-block;
     width: 12px;
     height: 14px;
@@ -1076,23 +1116,18 @@ header {
     background-image: url(../images/login.png);
 }
 
-.taobao-self div a:first-child i {
+.taobao-self .operation a:first-child i {
     margin-top: -6px;
     margin-right: 6px;
     vertical-align: middle;
 }
 
-.taobao-self div a {
-    padding: 7px 14px 6px 12px;
+.taobao-self .operation a {
+    padding: 6px 14px 7px 12px;
 }
 
-.taobao-self div a:first-child {
-    margin-right: 1px;
-    padding: 7px 25px 6px 25px;
-}
-
-.taobao-self div a:last-child {
-    margin-left: 1px;
+.taobao-self .operation a:first-child {
+    padding: 6px 25px 7px 25px;
 }
 
 .taobao-heading {
@@ -1206,7 +1241,7 @@ header {
 .taobao-life .phone-bill i {
     width: 35px;
     height: 51px;
-    margin: 38px 0 15px;
+    margin: 38px 0 15px -2px;
     background: url(../images/phone_bill.png);
 }
 
@@ -1316,6 +1351,7 @@ header {
 .taobao-life #phone-bill-info .tab .link-border {
     padding: 3px 9px;
     border: 2px solid #a6c8ff;
+    color: #FF4300;
 }
 
 .taobao-life .slider {
@@ -1415,6 +1451,21 @@ header {
 
 .taobao-life #phone-bill-info .price {
     margin-left: 5px;
+}
+
+.taobao-life #phone-bill-info .close-button {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background: url(../images/close_light.png);
+    cursor: pointer;
+}
+
+.taobao-life #phone-bill-info .close-button:hover {
+    background: url(../images/close_dark.png);
 }
 
 .taobao-life .price span:first-child {
@@ -1648,11 +1699,10 @@ header {
     position: relative;
     float: left;
     width: 100%;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 .all-goods-information .hot-point {
-    float: left;
     height: 69px;
     border: 1px solid #e8e8e8;
 }
@@ -1667,7 +1717,7 @@ header {
 .all-goods-information .hot-recommend {
     font-size: 0;
     height: 42px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-left: 17px;
     border-right: 1px solid #e8e8e8;
 }
@@ -1691,6 +1741,7 @@ header {
     font-size: 12px;
     line-height: 20px;
     margin-left: 18px;
+    margin-top: -2px;
 }
 
 .current-hot:before,
@@ -1704,7 +1755,7 @@ header {
 
 .hot-point ul a {
     position: relative;
-    margin-right: 9px;
+    margin-right: 11px;
     color: #3c3c3c;
 }
 
@@ -1756,7 +1807,7 @@ header {
 
 .made-in-china-wrapper ul {
     line-height: 12px;
-    margin-top: 19px;
+    margin-top: 20px;
     margin-left: 20px;
 }
 
@@ -1765,7 +1816,7 @@ header {
 }
 
 .made-in-china-wrapper li:first-child a {
-    margin: 1px 0 0 13px;
+    margin: 0 0 0 15px;
     vertical-align: top;
 }
 
@@ -1862,7 +1913,7 @@ header {
 
 .auction li:first-child a,
 .crowdfunding li:first-child a {
-    margin: 1px 0 0 2px;
+    margin: 0 0 0 4px;
     vertical-align: top;
 }
 
@@ -1877,7 +1928,7 @@ header {
 
 .auction li:last-child a,
 .crowdfunding li:last-child a {
-    margin-right: 4px;
+    margin-right: 6px;
 }
 
 .auction-crowdfunding .hot-icon,
@@ -1897,12 +1948,10 @@ header {
 
 .auction-crowdfunding-switcher {
     position: absolute;
-    top: 0;
+    top: 23px;
     right: -1px;
-    bottom: 0;
     width: 12px;
     height: 24px;
-    margin: auto 0;
     border: 1px solid #f40;
 }
 
@@ -1945,7 +1994,6 @@ header {
 }
 
 .clothes {
-    float: left;
     width: 888px;
     height: 310px;
     margin-top: 10px;
@@ -2129,6 +2177,11 @@ header {
     height: 258px;
     margin-left: -1px;
     border: 1px solid #f4f4f4;
+}
+
+.outdoors,
+.treasure {
+    border-color: #E8E8E8;
 }
 
 .outdoors-treasure .border-left-hover,

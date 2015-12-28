@@ -325,6 +325,9 @@ $(window).load(function() {
         $(".various-service .service-content").children().eq($(this).index()).addClass("show-content").siblings().removeClass("show-content");
     });
 
+    /*
+        taobao-life部分的hover效果
+     */
     $(".taobao-life .phone-bill, .taobao-life .games, .taobao-life .travel, .taobao-life .insurance").hover(function() {
         $(".taobao-life .phone-bill i").addClass("hover-show");
         $(".taobao-life .phone-bill").addClass("change-height");
@@ -341,7 +344,19 @@ $(window).load(function() {
     });
 
     $("#phone-bill-info").hover(function() {
-        $(".taobao-life .phone-bill").addClass("border-show");
+        if (! $(this).hasClass("hidden")) {
+            $(".taobao-life .phone-bill").addClass("border-show");
+        }
+    });
+
+    /*
+        close-button的点击关闭效果
+     */
+    $(".taobao-life #phone-bill-info .close-button").click(function() {
+        $("#phone-bill-info").addClass("hidden");
+        $(".taobao-life .phone-bill").removeClass("change-height");
+        $(".taobao-life .phone-bill i").removeClass("hover-show");
+        $(".taobao-life .phone-bill").removeClass("border-show");
     });
     /*
       taobao-life部分slider的切换
