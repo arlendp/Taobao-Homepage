@@ -2079,8 +2079,12 @@ header {
 .outdoors-treasure,
 .foods-amusement,
 .cars-entertainment {
-    float: left;
     margin-top: 14px;
+}
+
+.outdoors-treasure {
+    display: inline-block;
+    margin-left: -1px;
 }
 
 .outdoors,
@@ -2089,7 +2093,11 @@ header {
     float: left;
     height: 258px;
     padding-right: 7px;
-    border: 1px solid #f4f4f4;
+    border: 1px solid #E8E8E8;
+}
+
+.foods {
+    padding-right: 7px;
 }
 
 .outdoors-treasure .pictures,
@@ -2109,9 +2117,12 @@ header {
 }
 
 .outdoors-treasure .pictures a:first-child,
-.foods-amusement .pictures a:first-child,
 .cars-entertainment .pictures a:first-child {
     margin-right: 19px;
+}
+
+.foods-amusement .pictures a:first-child {
+    margin-right: 36px;
 }
 
 .outdoors img,
@@ -2176,12 +2187,11 @@ header {
 .cars-entertainment .entertainment {
     height: 258px;
     margin-left: -1px;
-    border: 1px solid #f4f4f4;
+    border: 1px solid #E8E8E8;
 }
 
-.outdoors,
-.treasure {
-    border-color: #E8E8E8;
+.outdoors-treasure .treasure {
+    padding-right: 7px;
 }
 
 .outdoors-treasure .border-left-hover,
@@ -2209,7 +2219,6 @@ header {
 }
 
 .outdoors-treasure .treasure .pictures a:first-child,
-.foods-amusement .makeup .pictures a:first-child,
 .cars-entertainment .entertainment .pictures a:first-child {
     margin-right: 43px;
 }
@@ -2228,17 +2237,16 @@ header {
 }
 
 .ad-picture {
-    float: left;
-    margin: 12px 0 0 7px;
+    margin: 11px 0 0 6px;
 }
 
 .electronics {
     position: relative;
-    float: left;
     width: 889px;
     height: 258px;
     margin-top: 14px;
     border: 1px solid #e8e8e8;
+    margin-left: -1px;
 }
 
 .electronics:hover {
@@ -2333,8 +2341,9 @@ header {
 }
 
 .foods-children {
-    float: left;
     margin-top: 14px;
+    display: inline-block;
+    margin-left: -1px;
 }
 
 .foods-children .foods,
@@ -2432,8 +2441,9 @@ header {
     font-weight: bold;
     line-height: 22px;
     margin-top: 15px;
+    font-size: 15px;
     margin-left: -1px;
-    padding-left: 12px;
+    padding-left: 13px;
     color: #3c3c3c;
     border-left: 2px solid #f40;
 }
@@ -2502,7 +2512,6 @@ header {
 
 .family {
     position: relative;
-    float: left;
     width: 888px;
     height: 310px;
     margin-top: 13px;
@@ -2559,7 +2568,7 @@ header {
 .family .family-nav {
     position: absolute;
     top: 19px;
-    left: 334px;
+    left: 346px;
     display: inline-block;
 }
 
@@ -2579,6 +2588,7 @@ header {
 .family .lists-pictures ul {
     line-height: 30px;
     display: inline-block;
+    vertical-align: top;
 }
 
 .family .lists-pictures {
@@ -2598,9 +2608,7 @@ header {
     display: inline-block;
     width: 370px;
     height: 250px;
-    margin-left: 3px;
-    vertical-align: 1px;
-    vertical-align: -8px;
+    margin: 8px 0 0 3px;
 }
 
 .family .lists-pictures .pictures > a {
@@ -2637,6 +2645,10 @@ header {
     background-color: #ffca00;
 }
 
+.family .pictures img {
+    display: block;
+}
+
 .family .family-picture {
     position: absolute;
     top: 0;
@@ -2652,6 +2664,11 @@ header {
     display: inline-block;
     width: 130px;
     margin-right: 11px;
+}
+
+.foods-amusement {
+    margin-left: -1px;
+    display: inline-block;
 }
 
 .foods-amusement .foods .pictures {
@@ -2681,7 +2698,7 @@ header {
 }
 
 .foods-amusement .makeup .pictures a:first-child {
-    margin-right: 27px;
+    margin-right: 51px;
 }
 
 .foods-amusement .makeup .pictures a p:last-child {
@@ -2690,6 +2707,11 @@ header {
 
 .foods-amusement .makeup {
     padding-right: 7px;
+}
+
+.cars-entertainment {
+    display: inline-block;
+    margin: 13px 0 0 -1px;
 }
 
 .cars-entertainment .pictures a:first-child {
@@ -2717,10 +2739,9 @@ header {
 }
 
 .various-service {
-    float: left;
     width: 879px;
     height: 250px;
-    margin-top: 12px;
+    margin-top: 11px;
     border: 1px solid #e8e8e8;
 }
 
@@ -2764,6 +2785,12 @@ header {
     position: relative;
     display: inline-block;
     margin-right: 6px;
+    font-size: 0;
+}
+
+.various-service .service-content .life-service-primary .special {
+    width: 159px;
+    padding-right: 11px;
 }
 
 .various-service .service-content .life-service-primary > a:hover span {
@@ -2773,6 +2800,7 @@ header {
 
 .various-service .service-content a span {
     line-height: 28px;
+    font-size: 12px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2824,12 +2852,12 @@ header {
 }
 
 .ad-picture.right-offset {
-    margin-left: 1px;
+    margin: 12px 0 0;
 }
 
 .taobao-shoppings {
-    float: left;
-    margin-top: 11px;
+    display: inline-block;
+    margin: 11px 0 0 -1px;
 }
 
 .taobao-shoppings > div {
@@ -2901,10 +2929,18 @@ header {
     color: #6c6c6c;
 }
 
+.ali-travel .pictures-primary img {
+    display: block;
+}
+
 .taobao-shoppings .pictures-primary em {
     font-weight: bold;
     margin-top: 6px;
     color: #3c3c3c;
+}
+
+.ali-travel .pictures-primary em {
+    margin-top: 7px;
 }
 
 .taobao-shoppings .pictures-primary span,
@@ -2939,6 +2975,10 @@ header {
 
 .taobao-shoppings .pictures-wrapper {
     margin-top: 63px;
+}
+
+.ali-travel .pictures-wrapper {
+    margin-top: 62px;
 }
 
 .taobao-shoppings .pictures-wrapper .pictures-secondary:first-child {
@@ -2997,9 +3037,9 @@ header {
 }
 
 .go-shopping {
-    float: left;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 19px;
+    display: inline-block;
 }
 
 .go-shopping .shopping-header {
@@ -3025,6 +3065,10 @@ header {
 
 .go-shopping .shopping-pictures {
     float: left;
+}
+
+.go-shopping .shopping-pictures img {
+    display: block;
 }
 
 .go-shopping .shopping-pictures a, .go-shopping .shopping-slider-wrapper li a {
@@ -3119,10 +3163,10 @@ header {
 }
 
 .taobao-shopping-items {
-    margin-top: 20px;
+    margin: 20px 0 0 -1px;
+    display: inline-block;
 }
 
-.taobao-shopping-items,
 .taobao-shopping-items > div {
     float: left;
 }
@@ -3152,6 +3196,15 @@ header {
     color: #3c3c3c;
 }
 
+.taobao-shopping-items .farm-produce h2,
+.taobao-shopping-items .star h2 {
+    margin-bottom: 12px;
+}
+
+.taobao-shopping-items .shopping-item:not(.study) .picture-primary p {
+    margin-right: 1px;
+}
+
 .taobao-shopping-items h2:hover i {
     background: url(../images/taobao_shoppings_2d_code_hover.png);
 }
@@ -3161,7 +3214,7 @@ header {
     display: inline-block;
     width: 14px;
     height: 13px;
-    margin: 5px 0 0 4px;
+    margin: 5px 0 0;
     vertical-align: top;
     background: url(../images/taobao_shoppings_2d_code.png);
 }
@@ -3216,7 +3269,7 @@ header {
 }
 
 .taobao-shopping-items .study .picture-secondary {
-    margin-top: 20px;
+    margin-top: 21px;
 }
 
 .taobao-shopping-items .study .picture {
@@ -3224,9 +3277,8 @@ header {
 }
 
 .hot-sale {
-    float: left;
     width: 100%;
-    margin-top: 34px;
+    margin-top: 33px;
 }
 
 .hot-sale h2 {
@@ -3258,7 +3310,7 @@ header {
 
 .hot-sale .hot-sale-items {
     display: inline-block;
-    margin: 9px 0 0 1px;
+    margin: 9px 0 0 2px;
 }
 
 .hot-sale .single-item {
@@ -3267,6 +3319,14 @@ header {
     width: 214px;
     padding: 10px 10px 9px 9px;
     border: 1px solid #e8e8e8;
+}
+
+.hot-sale .single-item.item-two {
+    padding-left: 10px;
+}
+
+.hot-sale .single-item.item-three {
+    padding: 10px 9px 9px 10px;
 }
 
 .hot-sale .price {
@@ -3321,6 +3381,11 @@ header {
     color: #6c6c6c;
 }
 
+.hot-sale .single-item.item-two .reference,
+.hot-sale .single-item.item-three .reference {
+    margin-top: 12px;
+}
+
 .hot-sale .comment-collection {
     margin-top: 47px;
 }
@@ -3351,6 +3416,10 @@ header {
 .hot-sale .single-item .item-hover {
     width: 233px;
     height: 225px;
+}
+
+.hot-sale .single-item.item-two .item-hover {
+    width: 234px;
 }
 
 .hot-sale .single-item:hover {
@@ -3411,9 +3480,24 @@ header {
     border: 1px solid #e8e8e8;
 }
 
+
+.hot-sale .double-item.item-one .each-item:last-child,
+.hot-sale .double-item.item-two .each-item,
+.hot-sale .double-item.item-three .each-item:first-child {
+    padding-bottom: 9px;
+}
+
+.hot-sale .double-item.item-three .each-item {
+    padding-right: 11px;
+}
+
 .hot-sale .double-item .item-hover {
     width: 160px;
     height: 149px;
+}
+
+.hot-sale .double-item.item-three .item-hover {
+    width: 161px;
 }
 
 .hot-sale .double-item .item-hover p {
@@ -3436,12 +3520,11 @@ header {
 
 .hot-sale .double-item .each-item:last-child {
     margin-top: -1px;
-    padding-bottom: 9px;
 }
 
 .picture-show {
     float: left;
-    margin-top: -2px;
+    margin: -2px 0 0 2px;
 }
 
 .picture-show .picture-wrapper {
