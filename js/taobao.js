@@ -195,7 +195,7 @@ $(window).load(function() {
 
         function moveRight() {
             pictureList.animate({
-                "left": - pictureWidth * 2 + "px"
+                "left": -pictureWidth * 2 + "px"
             }, animationTime, function() {
                 pictureList.children().first().appendTo(pictureList);
                 pictureList.css("left", -pictureWidth + "px");
@@ -344,7 +344,7 @@ $(window).load(function() {
     });
 
     $("#phone-bill-info").hover(function() {
-        if (! $(this).hasClass("hidden")) {
+        if (!$(this).hasClass("hidden")) {
             $(".taobao-life .phone-bill").addClass("border-show");
         }
     });
@@ -367,4 +367,52 @@ $(window).load(function() {
         $("#phone-bill-info .content-wrapper").css("left", offset);
     });
 
+    /*
+        鼠标点击回到顶部
+     */
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 700) {//显示回到顶部按钮
+            $(".nav-tools .nav-top").removeClass("hidden");
+        } else {
+            $(".nav-tools .nav-top").addClass("hidden");
+        };
+
+        if ($(window).scrollTop() >= 200) {
+            $(".header-search-wrapper").removeClass("disappear border-hidden").animate({
+                height: "48px"
+            }, 500);
+        } else {
+            $(".header-search-wrapper").addClass("disappear").css("height", 0);
+        }
+    })
+
+    $(".nav-tools .nav-top").click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 800);
+    });
+
+    $(".header-search .box-tab-wrapper").hover(function() {
+        $(".header-search .box-tab-wrapper").addClass("change-height");
+    }, function() {
+        $(".header-search .box-tab-wrapper").removeClass("change-height");
+    });
+
+    $(".header-search .box-tab div").click(function() {
+        $(this).prependTo($(this).parent());
+        $(this).addClass("selected").siblings().removeClass("selected");
+        if ($(this).hasClass("tab-treasure")) {
+            $(".header-search .input-wrapper .treasure-info").removeClass("hidden").siblings("span").addClass("hidden");
+            $(".header-search .search-box .box").removeClass("tmall-border-color");
+            $(".header-search .search-button").removeClass("tmall-button-color");
+        } else if ($(this).hasClass("tab-tmall")) {
+            $(".header-search .input-wrapper .tmall-info").removeClass("hidden").siblings("span").addClass("hidden");
+            $(".header-search .search-box .box").addClass("tmall-border-color");
+            $(".header-search .search-button").addClass("tmall-button-color");
+        } else {
+            $(".header-search .input-wrapper span").addClass("hidden");
+            $(".header-search .search-box .box").removeClass("tmall-border-color");
+            $(".header-search .search-button").removeClass("tmall-button-color");
+        }
+    });
 });
